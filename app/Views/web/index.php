@@ -61,10 +61,11 @@ Author: Pemuda Solusi Teknologi
                             <div id="carouselExampleIndicators" class="slide carousel" data-ride="carousel">
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <img src="<?= base_url() ?>/assets/template/assets/images/banner/1.jpg" alt="" />
+                                        <img src="<?= base_url() ?>/assets/template/assets/images/banner/1.jpg"
+                                            alt="" />
                                         <div class="carousel-caption one">
                                             <div class="slider_content">
-                                                
+
                                                 <ul>
                                                     <li class="animated bounceInLeft"><a href="#">Shop Now</a>
                                                     </li>
@@ -75,10 +76,11 @@ Author: Pemuda Solusi Teknologi
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <img src="<?= base_url() ?>/assets/template/assets/images/banner/1.jpg" alt="" />
+                                        <img src="<?= base_url() ?>/assets/template/assets/images/banner/1.jpg"
+                                            alt="" />
                                         <div class="carousel-caption one">
                                             <div class="slider_content">
-                                                
+
                                                 <ul>
                                                     <li class="animated slideInLeft"><a href="#">Shop Now</a>
                                                     </li>
@@ -102,60 +104,63 @@ Author: Pemuda Solusi Teknologi
             <!--Slider area end here-->
 
             <!-- section1_menu_wrapper start here -->
-           
+
             <div class="section2_menu_wrapper">
-            <div class="container">
-                <div class="row section2_header">
-                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-3">
-                        <div class="logo_wrapper">
-                            <a href="../index.html"><img style="height:35px;" src="<?= base_url() ?>/assets/template/assets/images/section3_logo.png" class="img-responsive" alt="section2_logo_img" />
-                            </a>
-                        </div>
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#section2_responsive_nav">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <div class="col-lg-8 col-md-8 col-sm-9 hidden-xs">
-                        <nav class="navbar navbar-inverse">
-
-                            <div class="collapse navbar-collapse" id="mySidenav">
-                                <ul class="nav navbar-nav">
-                                    <li class="active"><a href="0">Home</a>
-                                    </li>
-                                    <li><a href="#5">Top Products</a>
-                                    </li>
-                                    <li><a href="#4">Sales</a>
-                                    </li>
-                                    <li><a href="#8">Contact Us</a>
-                                    </li>
-                                </ul>
+                <div class="container">
+                    <div class="row section2_header">
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-3">
+                            <div class="logo_wrapper">
+                                <a href="../index.html"><img style="height:35px;"
+                                        src="<?= base_url() ?>/assets/template/assets/images/section3_logo.png"
+                                        class="img-responsive" alt="section2_logo_img" />
+                                </a>
                             </div>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#section2_responsive_nav">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
 
-                        </nav>
+                        <div class="col-lg-8 col-md-8 col-sm-9 hidden-xs">
+                            <nav class="navbar navbar-inverse">
+
+                                <div class="collapse navbar-collapse" id="mySidenav">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="0">Home</a>
+                                        </li>
+                                        <li><a href="#5">Top Products</a>
+                                        </li>
+                                        <li><a href="#4">Sales</a>
+                                        </li>
+                                        <li><a href="#8">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+                        </div>
+
                     </div>
+                    <div class="visible-xs">
+                        <div class="collapse navbar-collapse" id="section2_responsive_nav">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Home</a>
+                                </li>
+                                <li><a href="#5">Top Products</a>
+                                </li>
+                                <li><a href="#4">Sales</a>
+                                </li>
+                                </li>
+                                <li><a href="#">Contact Us</a>
+                                </li>
 
-                </div>
-                <div class="visible-xs">
-                    <div class="collapse navbar-collapse" id="section2_responsive_nav">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a>
-                            </li>
-                            <li><a href="#5">Top Products</a>
-                            </li>
-                            <li><a href="#4">Sales</a>
-                            </li>
-                            </li>
-                            <li><a href="#">Contact Us</a>
-                            </li>
-
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
             <!-- section1_menu_wrapper end here -->
         </div>
@@ -185,20 +190,6 @@ Author: Pemuda Solusi Teknologi
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                         <div class="portfolio_nav_tabs">
-                            <!-- <div class="nav_tabs">
-                                <ul class="nav nav-pills">
-                                    <li class="active"><a data-toggle="pill" href="#all_items">All</a>
-                                    </li>
-                                    <li><a data-toggle="pill" href="#web_design">Web Design</a>
-                                    </li>
-                                    <li><a data-toggle="pill" href="#elements">Elements</a>
-                                    </li>
-                                    <li><a data-toggle="pill" href="#UI_items">UI Design</a>
-                                    </li>
-                                    <li><a data-toggle="pill" href="#photos">Photos</a>
-                                    </li>
-                                </ul>
-                            </div> -->
                             <div class="tab-content">
                                 <div id="all_items" class="tab-pane fade in active">
                                     <div class="row">
@@ -229,20 +220,21 @@ Author: Pemuda Solusi Teknologi
                                             <div class="tab_image_wrapper">
                                                 <div class="tab_image">
                                                     <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-2.jpg"
+                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/rush.png"
                                                             class="img-responsive" alt="team1_img" />
                                                     </figure>
                                                 </div>
                                                 <div class="tab_image_text">
                                                     <div class="project_title">
-                                                        <h4><a href="#">Avanza GT</a></h4>
+                                                        <h4><a href="#">Toyota Rush</a></h4>
+                                                        <span>Rp 350.000.000,-</span>
                                                     </div>
                                                     <div class="project_category">
-                                                        <h4><a href="#">Web Development</a></h4>
+                                                        <span><a href="#">Cek Angsuran</a></span>
                                                     </div>
                                                     <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
+                                                        <a href="#"><img height="30px"
+                                                                src="<?= base_url() ?>/assets/template/assets/images/icon/whatsapp.png"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -251,20 +243,21 @@ Author: Pemuda Solusi Teknologi
                                             <div class="tab_image_wrapper">
                                                 <div class="tab_image">
                                                     <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-3.jpg"
+                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/raize.png"
                                                             class="img-responsive" alt="team1_img" />
                                                     </figure>
                                                 </div>
                                                 <div class="tab_image_text">
                                                     <div class="project_title">
-                                                        <h4><a href="#">Freeart App Design</a></h4>
+                                                        <h4><a href="#">Toyota Raize</a></h4>
+                                                        <span>Rp 350.000.000,-</span>
                                                     </div>
                                                     <div class="project_category">
-                                                        <h4><a href="#">Application</a></h4>
+                                                        <span><a href="#">Cek Angsuran</a></span>
                                                     </div>
                                                     <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
+                                                        <a href="#"><img height="30px"
+                                                                src="<?= base_url() ?>/assets/template/assets/images/icon/whatsapp.png"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1091,14 +1084,14 @@ Author: Pemuda Solusi Teknologi
         });
     }
 
-    $(window).scroll(function(){
-		var window_top = $(window).scrollTop() + 1; 
-		if (window_top > 50) {
-			$('.section2_menu_wrapper').addClass('menu_fixed animated fadeInDown');
-		} else {
-			$('.section2_menu_wrapper').removeClass('menu_fixed animated fadeInDown');
-		}
-	});
+    $(window).scroll(function() {
+        var window_top = $(window).scrollTop() + 1;
+        if (window_top > 50) {
+            $('.section2_menu_wrapper').addClass('menu_fixed animated fadeInDown');
+        } else {
+            $('.section2_menu_wrapper').removeClass('menu_fixed animated fadeInDown');
+        }
+    });
     </script>
 
 </body>
