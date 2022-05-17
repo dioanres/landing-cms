@@ -6,7 +6,7 @@ class FetchDataController extends BaseController
 {
     public function __construct()
     {
-        $this->aboutUsModel = new AboutUsModel(); 
+        // $this->aboutUsModel = new AboutUsModel(); 
     }
 
     public function fetchingDataGroup()
