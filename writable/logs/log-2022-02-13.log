@@ -1,0 +1,55 @@
+CRITICAL - 2022-02-13 20:57:38 --> Unable to connect to the database.
+#0 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/dioanres/Documents/projects/rendra_groups/website-tms/app/Models/CompanyModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/dioanres/Documents/projects/rendra_groups/website-tms/app/Controllers/Home.php(32): App\Models\CompanyModel->getAllAp()
+#4 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#5 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/dioanres/Documents/projects/rendra_groups/website-tms/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /Users/dioanres/.composer/vendor/laravel/valet/server.php(219): require('/Users/dioanres...')
+#9 {main}
+CRITICAL - 2022-02-13 20:57:41 --> Unable to connect to the database.
+#0 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/dioanres/Documents/projects/rendra_groups/website-tms/app/Models/CompanyModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/dioanres/Documents/projects/rendra_groups/website-tms/app/Controllers/Home.php(32): App\Models\CompanyModel->getAllAp()
+#4 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#5 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/dioanres/Documents/projects/rendra_groups/website-tms/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /Users/dioanres/.composer/vendor/laravel/valet/server.php(219): require('/Users/dioanres...')
+#9 {main}
+CRITICAL - 2022-02-13 20:58:35 --> Unable to connect to the database.
+#0 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/dioanres/Documents/projects/rendra_groups/website-tms/app/Models/CompanyModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/dioanres/Documents/projects/rendra_groups/website-tms/app/Controllers/Home.php(32): App\Models\CompanyModel->getAllAp()
+#4 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#5 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/dioanres/Documents/projects/rendra_groups/website-tms/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /Users/dioanres/.composer/vendor/laravel/valet/server.php(219): require('/Users/dioanres...')
+#9 {main}
+CRITICAL - 2022-02-13 20:58:36 --> Unable to connect to the database.
+#0 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/dioanres/Documents/projects/rendra_groups/website-tms/app/Models/CompanyModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/dioanres/Documents/projects/rendra_groups/website-tms/app/Controllers/Home.php(32): App\Models\CompanyModel->getAllAp()
+#4 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#5 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/dioanres/Documents/projects/rendra_groups/website-tms/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /Users/dioanres/.composer/vendor/laravel/valet/server.php(219): require('/Users/dioanres...')
+#9 {main}
+CRITICAL - 2022-02-13 20:58:36 --> Unable to connect to the database.
+#0 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/dioanres/Documents/projects/rendra_groups/website-tms/app/Models/CompanyModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/dioanres/Documents/projects/rendra_groups/website-tms/app/Controllers/Home.php(32): App\Models\CompanyModel->getAllAp()
+#4 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#5 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Users/dioanres/Documents/projects/rendra_groups/website-tms/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/dioanres/Documents/projects/rendra_groups/website-tms/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /Users/dioanres/.composer/vendor/laravel/valet/server.php(219): require('/Users/dioanres...')
+#9 {main}
