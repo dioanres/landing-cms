@@ -236,8 +236,34 @@ Author: Pemuda Solusi Teknologi
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="text-center">
+                        <button id="other-price" class="btn btn-primary">Lihat Harga Produk Lain</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Modal Harga Lain -->
+        <div id="modal-price" class="modal">
+            <div class="container">
+                <!-- <div class="row">
+                    <span class="close">&times;</span>
+                </div> -->
+                <div class="row">
+                    <img class="modal-content"
+                        src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/harga.jpeg">
+                </div>
+                <div class="row text-center" style="margin-top:10px;">
+                <button id="other-price" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+                </div>
+
+
+                <div id="caption"></div>
+            </div>
+        </div>
+
+        <!-- End Moodal -->
         <!-- portfolio_section end-->
     </div>
     <div data-scroll='4' id="4" class="full_width">
@@ -647,6 +673,10 @@ Author: Pemuda Solusi Teknologi
         } else {
             $('.section2_menu_wrapper').removeClass('menu_fixed animated fadeInDown');
         }
+    });
+
+    $('#other-price').click(function() {
+        $('#modal-price').modal('show');
     });
     </script>
 
