@@ -40,22 +40,18 @@ Author: Pemuda Solusi Teknologi
                                                 <ul>
                                                     <li class="animated bounceInLeft"><a href="#">Shop Now</a>
                                                     </li>
-                                                    <li class="animated bounceInRight"><a href="#">Discover</a>
-                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <img src="<?= base_url() ?>/assets/template/assets/images/banner/1.jpg"
+                                        <img src="<?= base_url() ?>/assets/template/assets/images/banner/2.jpg"
                                             alt="" />
                                         <div class="carousel-caption one">
                                             <div class="slider_content">
 
                                                 <ul>
                                                     <li class="animated slideInLeft"><a href="#">Shop Now</a>
-                                                    </li>
-                                                    <li class="animated bounceInRight"><a href="#">Discover</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -268,37 +264,22 @@ Author: Pemuda Solusi Teknologi
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                        <div class="team_slider">
+                        <div class="team_slider" data-ride="carousel">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="main_wrapper">
                                         <div class="image_wrapper">
-                                            <img src="<?= base_url() ?>/assets/template/assets/images/team-images/team-1.jpg"
-                                                class="img-responsive" alt="team1_img" />
-                                            <div class="image_wrapper_overlay">
-                                                <div class="content_wrapper">
-                                                    <h4>Kerry Spark</h4>
-                                                    <h5>(Founder)</h5>
-                                                    <ul class="social_icons">
-                                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-google-plus"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            <img src="<?= base_url() ?>/assets/template/assets/images/sales/1.jpeg"
+                                                class="img-responsive img-sales" alt="team1_img" />
+
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="main_wrapper">
                                         <div class="image_wrapper">
-                                            <img src="<?= base_url() ?>/assets/template/assets/images/team-images/team-2.jpg"
-                                                class="img-responsive" alt="team2_img" />
+                                            <img src="<?= base_url() ?>/assets/template/assets/images/sales/2.jpeg"
+                                                class="img-responsive img-sales" alt="team1_img" />
                                             <div class="image_wrapper_overlay">
                                                 <div class="content_wrapper">
                                                     <h4>Steven Odam</h4>
@@ -321,48 +302,17 @@ Author: Pemuda Solusi Teknologi
                                 <div class="item">
                                     <div class="main_wrapper">
                                         <div class="image_wrapper">
-                                            <img src="<?= base_url() ?>/assets/template/assets/images/team-images/team-3.jpg"
-                                                class="img-responsive" alt="team3_img" />
-                                            <div class="image_wrapper_overlay">
-                                                <div class="content_wrapper">
-                                                    <h4>Brett Tepper</h4>
-                                                    <h5>(Designer)</h5>
-                                                    <ul class="social_icons">
-                                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-google-plus"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            <img src="<?= base_url() ?>/assets/template/assets/images/sales/3.jpeg"
+                                                class="img-responsive img-sales" alt="team1_img" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="main_wrapper">
                                         <div class="image_wrapper">
-                                            <img src="<?= base_url() ?>/assets/template/assets/images/team-images/team-4.jpg"
-                                                class="img-responsive" alt="team4_img" />
-                                            <div class="image_wrapper_overlay">
-                                                <div class="content_wrapper">
-                                                    <h4>Joney Mike</h4>
-                                                    <h5>(Developer)</h5>
-                                                    <ul class="social_icons">
-                                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-google-plus"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            <img src="<?= base_url() ?>/assets/template/assets/images/sales/4.jpeg"
+                                                class="img-responsive img-sales" alt="team1_img" />
+
                                         </div>
                                     </div>
                                 </div>

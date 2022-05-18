@@ -50,5 +50,10 @@
         width:150px;
         border-radius: 50%;
     }
+
+    .img-sales {
+        height:350px;
+        width:350px;
+    }
     </style>
 </head>
