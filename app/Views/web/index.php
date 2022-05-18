@@ -8,52 +8,8 @@ Author: Pemuda Solusi Teknologi
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title> Toyota </title>
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/assets/template/assets/images/favicon.png">
-
-    <!-- Bootstrap core CSS -->
-
-    <link href="<?= base_url() ?>/assets/template/assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-
-    <!-- Font-Awesome -->
-    <link href="<?= base_url() ?>/assets/template/assets/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Web Fonts -->
-    <link href="<?= base_url() ?>/assets/template/assets/css/fonts.css" rel="stylesheet">
-    <!-- Owl Carousel -->
-    <link href="<?= base_url() ?>/assets/template/assets/css/owl.theme.default.css" rel="stylesheet">
-    <link href="<?= base_url() ?>/assets/template/assets/css/owl.carousel.css" rel="stylesheet">
-    <!-- Animation Css -->
-    <link href="<?= base_url() ?>/assets/template/assets/css/animate.css" rel="stylesheet">
-    <!-- Magnific Popup Css -->
-    <link rel="stylesheet" href="<?= base_url() ?>/assets/template/assets/css/magnific-popup.css">
-    <!-- Style Css -->
-    <link href="<?= base_url() ?>/assets/template/assets/css/style.css" rel="stylesheet">
-    <link href="<?= base_url() ?>/assets/template/assets/css/basic_slider_2.css" rel="stylesheet">
-    <style>
-    .wa-show {
-        position: fixed;
-        bottom: 85px;
-        right: 21px;
-
-    }
-
-    .shadow {
-        box-shadow: -2px 4px 8px #545252;
-        -moz-border-radius: 25px;
-        -webkit-border-radius: 25px;
-        border-radius: 25px;
-    }
-    </style>
-</head>
+<!-- Header -->
+<?= View('/web/layouts/header') ?>
 
 <body>
     <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
@@ -67,7 +23,7 @@ Author: Pemuda Solusi Teknologi
 
     <!-- section_1 start-->
     <div data-scroll='0' class="">
-        <div class="section_1">
+        <div>
             <!--Slider area start here-->
             <section class="slider-area">
                 <div class="container-fluid">
@@ -277,396 +233,7 @@ Author: Pemuda Solusi Teknologi
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-4.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Logo & Branding</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">UI Design</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-5.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Olivera Note</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Photos</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-6.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Promotional Tags</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Art / Logo</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="web_design" class="tab-pane fade">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-1.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Creative Web Design</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Web Design</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-2.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Complex Deshboard</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Web Development</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-3.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Freeart App Design</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Application</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-4.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Logo & Branding</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">UI Design</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-5.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Olivera Note</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Photos</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="elements" class="tab-pane fade">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-1.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Creative Web Design</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Web Design</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-2.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Complex Deshboard</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Web Development</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-3.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Freeart App Design</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Application</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-4.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Logo & Branding</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">UI Design</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="UI_items" class="tab-pane fade">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-1.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Creative Web Design</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Web Design</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-2.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Complex Deshboard</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Web Development</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-3.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Freeart App Design</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Application</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="photos" class="tab-pane fade">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-1.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Creative Web Design</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Web Design</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-2.jpg"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Complex Deshboard</a></h4>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <h4><a href="#">Web Development</a></h4>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                            1548</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -799,30 +366,6 @@ Author: Pemuda Solusi Teknologi
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="main_wrapper">
-                                        <div class="image_wrapper">
-                                            <img src="<?= base_url() ?>/assets/template/assets/images/team-images/team-5.jpg"
-                                                class="img-responsive" alt="team5_img" />
-                                            <div class="image_wrapper_overlay">
-                                                <div class="content_wrapper">
-                                                    <h4>Robert Smith</h4>
-                                                    <h5>(Core Team)</h5>
-                                                    <ul class="social_icons">
-                                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-google-plus"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -832,6 +375,49 @@ Author: Pemuda Solusi Teknologi
         <!-- team_section end -->
 
 
+    </div>
+    <div data-scroll='7' id="7" class="full_width">
+        <div class="section_5" style="text-align: -webkit-center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 col-lg-offset-3">
+                        <!-- <div class="section5_text_wrapper">
+                        <div class="section5_text_heading">
+                            <h2>Hubungi :</h2>
+                        </div>
+                        <div class="section5_text_content">
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.Aenean sollicitudin, lorem quis bibendum aucto</p>
+                        </div>
+                    </div> -->
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <div class="section5_slider_wrapper">
+                            <div class="owl-item">
+
+                                <div class="item">
+                                    <div class="section5_item_image">
+                                        <img src="<?= base_url() ?>/assets/template/assets/images/photo/a.jpeg"
+                                            class="img-responsive img-round" alt="section1_t1__img" />
+                                    </div>
+                                    <div class="section5_item_author">
+                                        <h5>Arif Fachrurrozi</h5>
+                                        <h6>(Marketing Auto 2000)</h6>
+                                    </div>
+                                    <div class="section5_item_content">
+                                        <p>"Marketing Terbaik dalam penjualan Mobil Toyota .."</p>
+                                        <!-- <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div data-scroll="6" class="full_width">
         <!-- testimonial_section start-->

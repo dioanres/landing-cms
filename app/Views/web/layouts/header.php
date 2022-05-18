@@ -1,26 +1,54 @@
-<!-- Header -->
-<nav id="nav-head" class="navbar navbar-expand-lg head-nav fixed-top bg-transparent">
-    <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="/">
-            <img class="nav-image" src="<?= base_url() ?>/assets/images/logo/tms.png" alt="">
-            <h5 class="pt-2">
-                <span class="sun-head">TMS</span>
-                <span class="group-head">GROUP</span>
-            </h5>
-        </a>
-        <button class="navbar-toggler" onclick="changeNav()" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="toggler">
-                <i class="fas fa-bars"></i>
-            </div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link mx-2" href="#beranda">Beranda</a>
-                <a class="nav-item nav-link mx-2 active-nav" href="#tentang-kami">Tentang</a>
-                <a class="nav-item nav-link mx-2" href="#anak-perusahaan">Anak Perusahaan</a>
-                <a class="nav-item nav-link mx-2" href="#hubungi-kami">Kontak</a>
-            </div>
-        </div>
-    </div>
-</nav>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Toyota </title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/assets/template/assets/images/favicon.png">
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="<?= base_url() ?>/assets/template/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <!-- Font-Awesome -->
+    <link href="<?= base_url() ?>/assets/template/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Web Fonts -->
+    <link href="<?= base_url() ?>/assets/template/assets/css/fonts.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link href="<?= base_url() ?>/assets/template/assets/css/owl.theme.default.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/assets/template/assets/css/owl.carousel.css" rel="stylesheet">
+    <!-- Animation Css -->
+    <link href="<?= base_url() ?>/assets/template/assets/css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Css -->
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/template/assets/css/magnific-popup.css">
+    <!-- Style Css -->
+    <link href="<?= base_url() ?>/assets/template/assets/css/style.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/assets/template/assets/css/basic_slider_2.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/assets/template/assets/css/basic_slider_2.css" rel="stylesheet">
+    
+    <style>
+    .wa-show {
+        position: fixed;
+        bottom: 85px;
+        right: 21px;
+
+    }
+
+    .shadow {
+        box-shadow: -2px 4px 8px #545252;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+    }
+
+    .img-round {
+        height:150px;
+        width:150px;
+        border-radius: 50%;
+    }
+    </style>
+</head>
