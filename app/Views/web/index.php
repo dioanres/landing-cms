@@ -399,9 +399,9 @@ Author: Pemuda Solusi Teknologi
                                         <img src="<?= base_url() ?>/assets/template/assets/images/photo/a.jpeg"
                                             class="img-responsive img-round" alt="section1_t1__img" />
                                     </div>
-                                    <div class="section5_item_author">
+                                    <div class="section5_item_author" style="margin-bottom:10px;margin-top:10px;">
                                         <h5>Arif Fachrurrozi</h5>
-                                        <h6>(Marketing Auto 2000)</h6>
+                                        <span><b>(Marketing Auto 2000)</b></span>
                                     </div>
                                     <div class="section5_item_content">
                                         <p>"Marketing Terbaik dalam penjualan Mobil Toyota .."</p>
