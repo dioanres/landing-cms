@@ -38,6 +38,21 @@ Author: Pemuda Solusi Teknologi
     <!-- Style Css -->
     <link href="<?= base_url() ?>/assets/template/assets/css/style.css" rel="stylesheet">
     <link href="<?= base_url() ?>/assets/template/assets/css/basic_slider_2.css" rel="stylesheet">
+    <style>
+    .wa-show {
+        position: fixed;
+        bottom: 85px;
+        right: 21px;
+
+    }
+
+    .shadow {
+        box-shadow: -2px 4px 8px #545252;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+    }
+    </style>
 </head>
 
 <body>
@@ -1035,6 +1050,11 @@ Author: Pemuda Solusi Teknologi
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="wa-show" id="btn-wa">
+            <a href="#div-order">
+                <img height="50px" class="shadow"
+                    src="<?= base_url() ?>/assets/template/assets/images/icon/whatsapp.png"></a>
         </div>
     </div>
     <!-- footer end -->
