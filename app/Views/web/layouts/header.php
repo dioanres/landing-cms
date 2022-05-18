@@ -35,7 +35,7 @@
         position: fixed;
         bottom: 85px;
         right: 21px;
-
+        z-index: 1;
     }
 
     .shadow {
