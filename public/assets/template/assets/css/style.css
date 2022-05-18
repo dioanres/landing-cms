@@ -2095,6 +2095,10 @@ contact_section section start
 	.counter_section .count-description{
 		margin-bottom:60px;
 	}
+
+	.portfolio_section{
+		margin-top: -250px;
+	}
 	
 }
 

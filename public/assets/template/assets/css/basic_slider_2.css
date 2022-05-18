@@ -359,11 +359,12 @@ Author: 	Pemuda Solusi Teknologi
   bottom: 0;
   background: #0c1523;
   opacity:0.1;
+  max-height: 55%;
 }
 .slider-area .carousel-inner .item img {
   display: block;
   width: 100%;
-  height:100%;
+  max-height:65%;
 }
 .slider-area .carousel-inner .item .carousel-caption {
   bottom: inherit;
