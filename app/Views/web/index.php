@@ -246,19 +246,24 @@ Author: Pemuda Solusi Teknologi
 
         <!-- Modal Harga Lain -->
         <div id="modal-price" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog">
 
                 <!-- Modal content-->
-                <img class="modal-content"
-                    src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/harga.jpeg">
-                <div class="row text-center" style="margin-top:10px;">
-                    <button id="other-price" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                   
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-    <!-- <div id="modal-price" class="modal">
+        <!-- <div id="modal-price" class="modal">
             <div class="container">
                 <div class="row">
                     <span class="close">&times;</span>
@@ -276,8 +281,8 @@ Author: Pemuda Solusi Teknologi
             </div>
         </div> -->
 
-    <!-- End Moodal -->
-    <!-- portfolio_section end-->
+        <!-- End Moodal -->
+        <!-- portfolio_section end-->
     </div>
     <div data-scroll='4' id="4" class="full_width">
         <!-- team_section start -->
