@@ -38,7 +38,7 @@ Author: Pemuda Solusi Teknologi
                                             <div class="slider_content">
 
                                                 <ul>
-                                                    <li class="animated bounceInLeft"><a href="#">Shop Now</a>
+                                                    <li class="animated bounceInLeft"><a href="#5">Shop Now</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -51,7 +51,7 @@ Author: Pemuda Solusi Teknologi
                                             <div class="slider_content">
 
                                                 <ul>
-                                                    <li class="animated slideInLeft"><a href="#">Shop Now</a>
+                                                    <li class="animated slideInLeft"><a href="#5">Shop Now</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -99,9 +99,11 @@ Author: Pemuda Solusi Teknologi
                                         </li>
                                         <li><a href="#5">Top Products</a>
                                         </li>
-                                        <li><a href="#4">Sales</a>
+                                        <li><a href="#4">Customers</a>
                                         </li>
-                                        <li><a href="#8">Contact Us</a>
+                                        <li><a href="#6">Testimonials</a>
+                                        </li>
+                                        <li><a href="#contact-us">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -117,10 +119,12 @@ Author: Pemuda Solusi Teknologi
                                 </li>
                                 <li><a href="#5">Top Products</a>
                                 </li>
-                                <li><a href="#4">Sales</a>
+                                <li><a href="#4">Customers</a>
                                 </li>
+                                <li><a href="#6">Testimonials</a>
+                                        </li>
                                 </li>
-                                <li><a href="#">Contact Us</a>
+                                <li><a href="#contact-us">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -383,16 +387,32 @@ Author: Pemuda Solusi Teknologi
                             <div class="owl-item">
 
                                 <div class="item">
-                                    <div class="section5_item_image">
+                                    <div class="section5_item_imag main_wrapper">
                                         <img src="<?= base_url() ?>/assets/template/assets/images/photo/a.jpeg"
-                                            class="img-responsive img-round" alt="section1_t1__img" />
+                                            class="img-responsive img-round image_wrapper" alt="section1_t1__img" />
+                                            <div class="image_wrapper_overlay">
+                                                <div class="content_wrapper">
+                                                    <h4>Steven Odam</h4>
+                                                    <h5>(Co-Founder)</h5>
+                                                    <ul class="social_icons">
+                                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                                        </li>
+                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                        </li>
+                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                        </li>
+                                                        <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                     </div>
                                     <div class="section5_item_author" style="margin-bottom:10px;margin-top:10px;">
                                         <h5>Arif Fachrurrozi</h5>
                                         <span><b>(Marketing Auto 2000)</b></span>
                                     </div>
                                     <div class="section5_item_content">
-                                        <p>"Marketing Terbaik dalam penjualan Mobil Toyota .."</p>
+                                        <p><i>"... Marketing Terbaik dalam penjualan Mobil Toyota ..."</i></p>
                                         <!-- <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -407,7 +427,7 @@ Author: Pemuda Solusi Teknologi
             </div>
         </div>
     </div>
-    <div data-scroll="6" class="full_width">
+    <div data-scroll="6" id="6" class="full_width">
         <!-- testimonial_section start-->
         <div class="testimonial_section">
             <div class="section_head">
@@ -533,7 +553,7 @@ Author: Pemuda Solusi Teknologi
 
     </div>
     <!-- footer start -->
-    <div class="footer">
+    <div class="footer" id="contact-us">
         <div class="container">
             <div class="row">
                 <div class="footer_copyright_image">

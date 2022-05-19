@@ -1625,7 +1625,8 @@ contact_section section start
 	width:100%;
 	padding-top:100px;
 	padding-bottom:100px;
-	background: url('../images/banner/3.jpg') no-repeat center center;
+	background-color: #aaaaa5;
+	/* background: url('../images/banner/3.jpg') no-repeat center center; */
 	background-size: cover;
 }
 .contact_section .btn{
