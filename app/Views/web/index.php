@@ -245,7 +245,7 @@ Author: Pemuda Solusi Teknologi
         </div>
 
         <!-- Modal Harga Lain -->
-        <div id="modal-price" class="modal fade" role="dialog">
+        <div id="modal-price" class="modal fade modal-price" role="dialog">
             <div class="modal-dialog modal-lg">
 
                 <!-- Modal content-->
@@ -689,7 +689,7 @@ Author: Pemuda Solusi Teknologi
     });
 
     $('#other-price').click(function() {
-        $('#modal-price').modal('show', alignModal());
+        $('#modal-price').modal('show');
 
         function alignModal() {
                 

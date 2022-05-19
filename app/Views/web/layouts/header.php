@@ -114,14 +114,19 @@
         vertical-align: middle;
     }
 
-
-
     /* 100% Image Width on Smaller Screens */
     @media only screen and (max-width: 700px) {
         .modal-content {
             width: 100%;
         }
 
+        .modal-price {
+        /* position: absolute; */
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:100%;
+    }
         /* .modal {
         display: flex;
         justify-content: center;
