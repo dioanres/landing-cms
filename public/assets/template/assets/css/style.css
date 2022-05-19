@@ -1106,6 +1106,7 @@ header{
 .tab_image, .tab_image_text{
 	float:left;
 	width:100%;
+	border: 1px solid #e1e1e1;
 }
 .tab_image_wrapper{
 	float:left;
@@ -1624,7 +1625,7 @@ contact_section section start
 	width:100%;
 	padding-top:100px;
 	padding-bottom:100px;
-	background: url('../images/contact-images/contact_bg.jpg') no-repeat center center;
+	background: url('../images/banner/3.jpg') no-repeat center center;
 	background-size: cover;
 }
 .contact_section .btn{

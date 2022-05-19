@@ -289,12 +289,11 @@ Author: Pemuda Solusi Teknologi
                         <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 col-lg-offset-3">
                             <div class="text-center">
                                 <div class="section_heading">
-                                    <h2><i class="fa fa-square"></i> Sales</h2>
+                                    <h2><i class="fa fa-square"></i> Delivery Customers</h2>
                                 </div>
-                                <div class="section_content">
-                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-                                        aliquet. Aenean sollicitudin, lorem quis bibendum aucto</p>
-                                </div>
+                                <!-- <div class="section_content">
+                                    <p>Para <i>Customers</i> yang telah mempercayakan pembelian mobil kepada Arif</p>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -421,8 +420,7 @@ Author: Pemuda Solusi Teknologi
                                     <h2><i class="fa fa-square"></i> What Client Say</h2>
                                 </div>
                                 <div class="section_content">
-                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-                                        aliquet. Aenean sollicitudin, lorem quis bibendum aucto</p>
+                                    <p>Testimonial dari para customer yang sudah mempercayakan kepada saya dalam pembelian Mobil.</p>
                                 </div>
                             </div>
                         </div>
