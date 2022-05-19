@@ -689,10 +689,13 @@ Author: Pemuda Solusi Teknologi
     });
 
     $('#other-price').click(function() {
-        $('#modal-price').modal('show').css({
-            'position':'fixed',
-            'top':'25px'
-        })
+        $('#modal-price').modal('show', alignModal());
+
+        function alignModal() {
+                
+                $(".modal-dialog").css("margin-top", Math.max(0, 
+                ($(window).height() - $(".modal-dialog").height()) / 2));
+            }
         //css('margin-top', (Math.floor((window.innerHeight - $('.modal')[0].offsetHeight) / 2) + 'px'));
     });
     </script>
