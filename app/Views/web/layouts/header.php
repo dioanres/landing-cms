@@ -29,7 +29,7 @@
     <link href="<?= base_url() ?>/assets/template/assets/css/style.css" rel="stylesheet">
     <link href="<?= base_url() ?>/assets/template/assets/css/basic_slider_2.css" rel="stylesheet">
     <link href="<?= base_url() ?>/assets/template/assets/css/basic_slider_2.css" rel="stylesheet">
-    
+
     <style>
     .wa-show {
         position: fixed;
@@ -46,79 +46,67 @@
     }
 
     .img-round {
-        height:150px;
-        width:150px;
+        height: 150px;
+        width: 150px;
         border-radius: 50%;
     }
 
     .img-sales {
-        height:350px;
-        width:350px;
+        height: 350px;
+        width: 350px;
     }
 
     /* Modal Price */
 
     /* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
+    /* Add Animation */
+    .modal-content,
+    #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
 
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
 
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
 
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
+        to {
+            transform: scale(1)
+        }
+    }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+        /* .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: show;
+    } */
+    }
     </style>
 </head>

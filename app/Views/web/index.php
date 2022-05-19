@@ -251,7 +251,7 @@ Author: Pemuda Solusi Teknologi
                     <span class="close">&times;</span>
                 </div> -->
                 <div class="row">
-                    <img class="modal-content"
+                    <img class="modal-content modal-dialog-centered"
                         src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/harga.jpeg">
                 </div>
                 <div class="row text-center" style="margin-top:10px;">
