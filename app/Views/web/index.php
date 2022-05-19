@@ -392,14 +392,14 @@ Author: Pemuda Solusi Teknologi
                                             class="img-responsive img-round image_wrapper" alt="section1_t1__img" />
                                             <div class="image_wrapper_overlay">
                                                 <div class="content_wrapper">
-                                                    <h4>Steven Odam</h4>
-                                                    <h5>(Co-Founder)</h5>
+                                                    <h4>Arif Fachrurozi</h4>
+                                                    <h5>Marketing Auto 2000</h5>
                                                     <ul class="social_icons">
-                                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                                        <li><a href="#"><i class="fa fa-whatsapp"></i></a>
                                                         </li>
-                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                        <li><a href="#"><i class="fa fa-instagram"></i></a>
                                                         </li>
-                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                        <li><a href="#"><i class="fa fa-youtube"></i></a>
                                                         </li>
                                                         <li><a href="#"><i class="fa fa-google-plus"></i></a>
                                                         </li>
@@ -408,7 +408,7 @@ Author: Pemuda Solusi Teknologi
                                             </div>
                                     </div>
                                     <div class="section5_item_author" style="margin-bottom:10px;margin-top:10px;">
-                                        <h5>Arif Fachrurrozi</h5>
+                                        <h5>Arif Fachrurozi</h5>
                                         <span><b>(Marketing Auto 2000)</b></span>
                                     </div>
                                     <div class="section5_item_content">
