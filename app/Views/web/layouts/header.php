@@ -35,7 +35,8 @@
         position: fixed;
         bottom: 85px;
         right: 21px;
-        z-index: 1;
+        cursor:pointer;
+        z-index: 99999999;
     }
 
     .shadow {
