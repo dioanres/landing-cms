@@ -122,9 +122,9 @@
 
         .modal-price {
         /* position: absolute; */
-        top: 40%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -75%);
         width:100%;
     }
         /* .modal {
