@@ -43,6 +43,44 @@ $routes->group('admin',['filter' => 'auth'], function($routes)
 	//dashboard
 	$routes->add('dashboard', 'DashboardController');
 
+	$routes->group('sales', function($routes) {
+		//banner
+		$routes->get('banner','Sales\BannerController');
+		$routes->add('banner/add','Sales\BannerController::add');
+		$routes->post('banner/save','Sales\BannerController::save');
+		$routes->post('banner/update','Sales\BannerController::update');
+		$routes->get('banner/edit/(:num)','Sales\BannerController::edit/$1');
+
+		//prooduct
+		$routes->get('product','Sales\ProductController');
+		$routes->add('product/add','Sales\ProductController::add');
+		$routes->post('product/save','Sales\ProductController::save');
+		$routes->post('product/update','Sales\ProductController::update');
+		$routes->get('product/edit/(:num)','Sales\ProductController::edit/$1');
+
+		//customer
+		$routes->get('customer','Sales\CustomerController');
+		$routes->add('customer/add','Sales\CustomerController::add');
+		$routes->post('customer/save','Sales\CustomerController::save');
+		$routes->post('customer/update','Sales\CustomerController::update');
+		$routes->get('customer/edit/(:num)','Sales\CustomerController::edit/$1');
+
+		//testimoni
+		$routes->get('testimonial','Sales\TestimoniController');
+		$routes->add('testimonial/add','Sales\TestimoniController::add');
+		$routes->post('testimonial/save','Sales\TestimoniController::save');
+		$routes->post('testimonial/update','Sales\TestimoniController::update');
+		$routes->get('testimonial/edit/(:num)','Sales\TestimoniController::edit/$1');
+
+		$routes->get('profile','Sales\ProfileController');
+		$routes->add('profile/add','Sales\ProfileController::add');
+		$routes->post('profile/save','Sales\ProfileController::save');
+		$routes->post('profile/update','Sales\ProfileController::update');
+		$routes->get('profile/edit/(:num)','Sales\ProfileController::edit/$1');
+	});
+	
+	
+
 	//users
 	$routes->add('users', 'UserController');
 	$routes->add('users/add','UserController::addUser');

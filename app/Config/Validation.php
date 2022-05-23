@@ -79,15 +79,13 @@ class Validation
 		]
 	];
 
-	public $pimpinan = [
-		'nama' => [
+	public $banner = [
+		'image' => [
 			'rules' => [
 				'required'
-			]
-		],
-		'jabatan' => [
-			'rules' => [
-				'required'
+			],
+			'errors' => [
+				'required' => 'Image Belum dipilih.'
 			]
 		]
 	];

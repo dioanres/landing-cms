@@ -4,4 +4,14 @@
 <meta name="description" content="Company Profile">
 <meta name="author" content="sun_group">
 
-<link href="<?php echo base_url('upload/setting').'/'.session()->get('data_setting')['meta_icon'] ?>" rel="icon" type="image/png" />
+<link href="<?php  isset(session()->get('data_setting')['meta_icon']) ? base_url('upload/setting').'/'.session()->get('data_setting')['meta_icon'] : '' ?>" rel="icon" type="image/png" />
+
+<style>
+    .text-red {
+        color: red;
+    }
+
+    .dataTables_filter {
+        float:right;
+    }
+</style>
