@@ -97,6 +97,19 @@ class ProductController extends BaseController
         return redirect()->back();
     }
 
+    public function delete($id)
+    {
+        try {
+            $delete = $this->model->delete($id);
+
+            if ($delete) {
+                return redirect('admin/sales/product');
+            }
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
 	//--------------------------------------------------------------------
 
 }

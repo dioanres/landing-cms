@@ -50,6 +50,7 @@ $routes->group('admin',['filter' => 'auth'], function($routes)
 		$routes->post('banner/save','Sales\BannerController::save');
 		$routes->post('banner/update','Sales\BannerController::update');
 		$routes->get('banner/edit/(:num)','Sales\BannerController::edit/$1');
+		$routes->get('banner/delete/(:num)','Sales\BannerController::delete/$1');
 
 		//prooduct
 		$routes->get('product','Sales\ProductController');
@@ -57,6 +58,7 @@ $routes->group('admin',['filter' => 'auth'], function($routes)
 		$routes->post('product/save','Sales\ProductController::save');
 		$routes->post('product/update','Sales\ProductController::update');
 		$routes->get('product/edit/(:num)','Sales\ProductController::edit/$1');
+		$routes->get('product/delete/(:num)','Sales\ProductController::delete/$1');
 
 		//customer
 		$routes->get('customer','Sales\CustomerController');
@@ -64,6 +66,7 @@ $routes->group('admin',['filter' => 'auth'], function($routes)
 		$routes->post('customer/save','Sales\CustomerController::save');
 		$routes->post('customer/update','Sales\CustomerController::update');
 		$routes->get('customer/edit/(:num)','Sales\CustomerController::edit/$1');
+		$routes->get('customer/delete/(:num)','Sales\CustomerController::delete/$1');
 
 		//testimoni
 		$routes->get('testimonial','Sales\TestimoniController');
@@ -71,12 +74,22 @@ $routes->group('admin',['filter' => 'auth'], function($routes)
 		$routes->post('testimonial/save','Sales\TestimoniController::save');
 		$routes->post('testimonial/update','Sales\TestimoniController::update');
 		$routes->get('testimonial/edit/(:num)','Sales\TestimoniController::edit/$1');
+		$routes->get('testimonial/delete/(:num)','Sales\TestimoniController::delete/$1');
 
 		$routes->get('profile','Sales\ProfileController');
 		$routes->add('profile/add','Sales\ProfileController::add');
 		$routes->post('profile/save','Sales\ProfileController::save');
 		$routes->post('profile/update','Sales\ProfileController::update');
 		$routes->get('profile/edit/(:num)','Sales\ProfileController::edit/$1');
+		$routes->get('profile/delete/(:num)','Sales\ProfileController::delete/$1');
+
+		//customer
+		$routes->get('notification','Sales\NotificationController');
+		$routes->add('notification/add','Sales\NotificationController::add');
+		$routes->post('notification/save','Sales\NotificationController::save');
+		$routes->post('notification/update','Sales\NotificationController::update');
+		$routes->get('notification/edit/(:num)','Sales\NotificationController::edit/$1');
+		$routes->get('notification/delete/(:num)','Sales\NotificationController::delete/$1');
 	});
 	
 	

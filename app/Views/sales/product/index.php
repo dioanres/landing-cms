@@ -70,7 +70,7 @@
 
                                                                 Edit
                                                             </a>
-                                                            <!-- <button type="button" class="btn btn-primary btn-sm">Delete</button> -->
+                                                            <a href="<?= base_url('admin/sales/product/delete').'/'.$user['id'] ?>" type="button" class="btn btn-danger btn-sm">Delete</a>
                                                         </td>
                                                     </tr>
                                                     <?php endforeach ?>

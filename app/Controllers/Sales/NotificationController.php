@@ -1,35 +1,35 @@
 <?php namespace App\Controllers\Sales;
 
-use \App\Models\customerModel;
+use \App\Models\NotificationModel;
 use App\Controllers\BaseController;
 
-class CustomerController extends BaseController
+class NotificationController extends BaseController
 {
     public function __construct()
     {
-        $this->model = new CustomerModel(); 
+        $this->model = new NotificationModel(); 
     }
 
 	public function index()
 	{	 
         $data = $this->model->findAll();
-        $title = 'Customer Delivery';
+        $title = 'Notification';
         
-		return view('sales/customer/index',['data' => $data, 'title' => $title]);
+		return view('sales/notification/index',['data' => $data, 'title' => $title]);
     }
 
     public function add()
     {   
-        return view('sales/customer/add',
+        return view('sales/notification/add',
             ['data' => null,
-            'title' => 'Add Customer Delivery'
+            'title' => 'Add Notification'
         ]);
     }
 
     public function save()
     {   
         $data = [
-            'notes' => $this->request->getPost('notes'),            
+            'desc' => $this->request->getPost('desc'),            
             'image' => $this->request->getPost('image'),
         ];
 
@@ -37,13 +37,13 @@ class CustomerController extends BaseController
         try {
             if(!empty($image->getName())) {
                 $newName = $image->getRandomName();
-                $image->move('upload/sales/customer', $newName);
+                $image->move('upload/sales/notification', $newName);
                 $data['image'] = $newName;
             }
             
             if($this->model->save($data) == true)
             {
-                return redirect('admin/sales/customer');
+                return redirect('admin/sales/notification');
             }
 
             return redirect()->back()->with('errors', $this->model->errors());
@@ -56,7 +56,7 @@ class CustomerController extends BaseController
     {
         $data = $this->model->find($id);
 
-        return view('sales/customer/edit',['data' => $data, 'title' => 'Edit customer']);
+        return view('sales/notification/edit',['data' => $data, 'title' => 'Edit notification']);
     }
 
     public function update()
@@ -64,7 +64,7 @@ class CustomerController extends BaseController
         if($this->request->getPost('id')) {
             try {
                 $data = [
-                    'notes' => $this->request->getPost('notes'),            
+                    'desc' => $this->request->getPost('desc'),            
                     'image' => $this->request->getPost('image'),
                 ];
                 
@@ -75,12 +75,12 @@ class CustomerController extends BaseController
                 $file = $this->request->getFile('image');
                 if(!empty($file->getName())) {
                     $newName = $file->getRandomName();
-                    $file->move('upload/sales/customer', $newName);
+                    $file->move('upload/sales/notification', $newName);
                     $data['image'] = $newName;
                 }
                 
                 if ($this->model->update($this->request->getPost('id'),$data) == true) {
-                    return redirect('admin/sales/customer');
+                    return redirect('admin/sales/notification');
                 } 
                 
                 return redirect()->back()->with('errors', $this->model->errors());
@@ -98,7 +98,7 @@ class CustomerController extends BaseController
             $delete = $this->model->delete($id);
 
             if ($delete) {
-                return redirect('admin/sales/customer');
+                return redirect('admin/sales/notification');
             }
         } catch (\Throwable $th) {
             throw $th;

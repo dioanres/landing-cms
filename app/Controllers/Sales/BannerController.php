@@ -93,6 +93,19 @@ class BannerController extends BaseController
         return redirect()->back();
     }
 
+    public function delete($id)
+    {
+        try {
+            $delete = $this->model->delete($id);
+
+            if ($delete) {
+                return redirect('admin/sales/banner');
+            }
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
 	//--------------------------------------------------------------------
 
 }

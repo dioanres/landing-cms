@@ -1,5 +1,5 @@
  <!-- Sidebar -->
- <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
+ <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:#031940">
 
 <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -33,45 +33,45 @@
 </li>
 <li class="nav-item">
   <a class="nav-link" href="<?= route_to('admin/users') ?>">
-    <i class="fas fa-fw fa-book"></i>
+    <i class="fas fa-fw fa-folder"></i>
     <span>Users</span></a>
 </li>
 
 <li class="nav-item">
   <a class="nav-link" href="<?= route_to('admin/sales/banner') ?>">
-    <i class="fas fa-fw fa-book"></i>
+    <i class="fas fa-fw fa-folder"></i>
     <span>Banner</span></a>
 </li>
 
 <li class="nav-item">
   <a class="nav-link" href="<?= route_to('admin/sales/product') ?>">
-    <i class="fas fa-fw fa-book"></i>
+    <i class="fas fa-fw fa-folder"></i>
     <span>Products</span></a>
 </li>
 
 <li class="nav-item">
   <a class="nav-link" href="<?= route_to('admin/sales/customer') ?>">
-    <i class="fas fa-fw fa-book"></i>
+    <i class="fas fa-fw fa-folder"></i>
     <span>Customer Deliveries</span></a>
 </li>
 
 <li class="nav-item">
   <a class="nav-link" href="<?= route_to('admin/sales/testimonial') ?>">
-    <i class="fas fa-fw fa-book"></i>
+    <i class="fas fa-fw fa-folder"></i>
     <span>Testimonials</span></a>
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="<?= route_to('admin/gallery') ?>">
-    <i class="fas fa-fw fa-book"></i>
-    <span>Gallery</span></a>
+  <a class="nav-link" href="<?= route_to('admin/sales/notification') ?>">
+    <i class="fas fa-fw fa-folder"></i>
+    <span>Notifications</span></a>
 </li>
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a class="nav-link" href="<?= route_to('admin/setting') ?>">
-    <i class="fas fa-fw fa-book"></i>
+    <i class="fas fa-fw fa-folder"></i>
     <span>Setting</span></a>
-</li>
+</li> -->
 
 <!-- Divider -->
 <hr class="sidebar-divider d-none d-md-block">

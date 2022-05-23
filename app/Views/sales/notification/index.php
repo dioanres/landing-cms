@@ -34,9 +34,12 @@
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
                                 <div style="float:right">
-                                    <a href="<?= route_to('admin/sales/banner/add') ?>" class="btn btn-primary btn-circle">
+                                    <?php if (count($data) < 1) : ?>
+                                    <a href="<?= route_to('admin/sales/notification/add') ?>"
+                                        class="btn btn-primary btn-circle">
                                         <i class="fas fa-plus"></i>
                                     </a>
+                                    <?php endif; ?>
                                 </div>
 
                             </div>
@@ -46,24 +49,28 @@
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Title</th>
                                                 <th>Image</th>
+                                                <th>Desc</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <?php foreach ($data as $user) : ?>
                                             <tr>
-                                            <td><?= $user['title'] ?></td>
-                                                <td><img src="<?php echo base_url('upload/sales/banner').'/'.$user['image'] ?>" widht="400px" height="200px" /></td>
+
+                                                <td><img src="<?php echo base_url('upload/sales/notification').'/'.$user['image'] ?>"
+                                                        widht="400px" height="200px" /></td>
+                                                <td><?= $user['desc'] ?></td>
                                                 <td>
-                                                    <a href="<?= base_url('admin/sales/banner/edit').'/'.$user['id'] ?>"
+                                                    <a href="<?= base_url('admin/sales/notification/edit').'/'.$user['id'] ?>"
                                                         class="btn btn-primary btn-sm">
 
                                                         Edit
                                                     </a>
-                                                    <a href="<?= base_url('admin/sales/banner/delete').'/'.$user['id'] ?>" type="button" class="btn btn-danger btn-sm">Delete</a>
+                                                    <a href="<?= base_url('admin/sales/notification/delete').'/'.$user['id'] ?>"
+                                                        type="button" class="btn btn-danger btn-sm">Delete</a>
                                                 </td>
+
                                             </tr>
                                             <?php endforeach ?>
                                         </tbody>

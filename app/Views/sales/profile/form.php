@@ -74,13 +74,16 @@
         } ?>
     </div>
 </div>
+
 <div class="form-group row">
     <div class="col-sm-6 mb-3 mb-sm-0">
-        <input type="text" class="form-control" placeholder="No Hp" name="phone"
-            value="<?= $data ? $data['phone'] : '' ?>">
-        <?php if (isset($errors['phone'])) {
-             echo '<span class="text-red">'.$errors['phone'].'</span>';
-        } ?>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone-alt"></i></span>
+            </div>
+            <input type="text" name="phone" value="<?= $data ? $data['phone'] : '' ?>" class="form-control" placeholder="No HP / Telpon"
+                aria-describedby="basic-addon1">
+        </div>
     </div>
 </div>
 <div class="form-group row">

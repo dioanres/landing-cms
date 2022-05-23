@@ -61,7 +61,6 @@
                                                         class="btn btn-primary btn-sm">
                                                         Edit
                                                     </a>
-                                                    <button type="button" class="btn btn-primary btn-sm">Delete</button>
                                                 </td>
                                             </tr>
                                             <?php endforeach ?>

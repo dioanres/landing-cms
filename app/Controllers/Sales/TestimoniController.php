@@ -96,6 +96,19 @@ class TestimoniController extends BaseController
         return redirect()->back();
     }
 
+    public function delete($id)
+    {
+        try {
+            $delete = $this->model->delete($id);
+
+            if ($delete) {
+                return redirect('admin/sales/testimonial');
+            }
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
 	//--------------------------------------------------------------------
 
 }
