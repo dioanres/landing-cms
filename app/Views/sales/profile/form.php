@@ -101,6 +101,17 @@
     <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="input-group mb-3">
             <div class="input-group-prepend">
+                <span class="input-group-text" id=""><i class="fas fa-comment-dots"></i></span>
+            </div>
+            <input type="text" name="text_whatsapp" value="<?= isset($socmed->text_whatsapp) ? $socmed->text_whatsapp : '' ?>" class="form-control" placeholder="Text Whatsapp" aria-label=""
+                aria-describedby="basic-addon1">
+        </div>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1"><i class="fab fa-instagram"></i></span>
             </div>
             <input type="text" name="instagram" value="<?= isset($socmed->instagram) ? $socmed->instagram : '' ?>" class="form-control" placeholder="Instagram" aria-label="Username"

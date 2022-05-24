@@ -42,8 +42,6 @@ class TestimoniController extends BaseController
                 $data['image'] = $newName;
             }
             
-            $save = $this->model->save($data);
-            
             if($this->model->save($data))
             {
                 return redirect('admin/sales/testimonial');

@@ -81,6 +81,9 @@ class ProfileController extends BaseController
                     'whatsapp' => $this->request->getPost('whatsapp'),
                     'instagram' => $this->request->getPost('instagram'),
                     'youtube' => $this->request->getPost('youtube'),
+                    'text_whatsapp' => $this->request->getPost('text_whatsapp'),
+                    'url_wa'    => 'https://wa.me/'.$this->request->getPost('whatsapp').
+                        '?text='.urlencode($this->request->getPost('text_whatsapp')),
                 ];
 
                 $data = [

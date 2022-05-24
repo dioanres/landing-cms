@@ -31,8 +31,11 @@ Author: Pemuda Solusi Teknologi
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd-0">
                             <div id="carouselExampleIndicators" class="slide carousel" data-ride="carousel">
                                 <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img src="<?= base_url() ?>/assets/template/assets/images/banner/1.jpg"
+                                    <?php if ($banners): 
+                                        foreach ($banners as $key => $banner) :    
+                                    ?>
+                                    <div class="item <?= $key == 0 ? 'active' : '' ?>">
+                                        <img src="<?= base_url() ?>/upload/sales/banner/<?= $banner['image'] ?>"
                                             alt="" />
                                         <div class="carousel-caption one">
                                             <div class="slider_content">
@@ -44,19 +47,7 @@ Author: Pemuda Solusi Teknologi
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <img src="<?= base_url() ?>/assets/template/assets/images/banner/2.jpg"
-                                            alt="" />
-                                        <div class="carousel-caption one">
-                                            <div class="slider_content">
-
-                                                <ul>
-                                                    <li class="animated slideInLeft"><a href="#5">Shop Now</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <?php endforeach; endif; ?>
                                 </div>
                                 <a class="carousel-control-prev carousel-control" href="#carouselExampleIndicators"
                                     role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
@@ -308,56 +299,18 @@ Author: Pemuda Solusi Teknologi
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                         <div class="team_slider" data-ride="carousel">
                             <div class="owl-carousel owl-theme">
+                                <?php if($customers): 
+                                    foreach($customers as $cust):
+                                ?>
                                 <div class="item">
                                     <div class="main_wrapper">
                                         <div class="image_wrapper">
-                                            <img src="<?= base_url() ?>/assets/template/assets/images/sales/1.jpeg"
-                                                class="img-responsive img-sales" alt="team1_img" />
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="main_wrapper">
-                                        <div class="image_wrapper">
-                                            <img src="<?= base_url() ?>/assets/template/assets/images/sales/2.jpeg"
-                                                class="img-responsive img-sales" alt="team1_img" />
-                                            <div class="image_wrapper_overlay">
-                                                <div class="content_wrapper">
-                                                    <h4>Steven Odam</h4>
-                                                    <h5>(Co-Founder)</h5>
-                                                    <ul class="social_icons">
-                                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-google-plus"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="main_wrapper">
-                                        <div class="image_wrapper">
-                                            <img src="<?= base_url() ?>/assets/template/assets/images/sales/3.jpeg"
+                                            <img src="<?= base_url() ?>/upload/sales/customer/<?= $cust['image'] ?>"
                                                 class="img-responsive img-sales" alt="team1_img" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="main_wrapper">
-                                        <div class="image_wrapper">
-                                            <img src="<?= base_url() ?>/assets/template/assets/images/sales/4.jpeg"
-                                                class="img-responsive img-sales" alt="team1_img" />
-
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php endforeach; endif; ?>
                             </div>
                         </div>
                     </div>
@@ -388,31 +341,31 @@ Author: Pemuda Solusi Teknologi
 
                                 <div class="item">
                                     <div class="section5_item_imag main_wrapper">
-                                        <img src="<?= base_url() ?>/assets/template/assets/images/photo/a.jpeg"
+                                        <img src="<?= base_url() ?>/upload/sales/profile/<?= $profile['photo'] ?>"
                                             class="img-responsive img-round image_wrapper" alt="section1_t1__img" />
                                         <div class="image_wrapper_overlay">
                                             <div class="content_wrapper">
-                                                <h4>Arif Fachrurozi</h4>
-                                                <h5>Marketing Auto 2000</h5>
+                                                <h4><?= $profile['name'] ?></h4>
+                                                <h5><?= $profile['job'] ?></h5>
                                                 <ul class="social_icons">
-                                                    <li><a href="#"><i class="fa fa-whatsapp"></i></a>
+                                                    <li><a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#' ?>"><i class="fa fa-whatsapp"></i></a>
                                                     </li>
-                                                    <li><a href="#"><i class="fa fa-instagram"></i></a>
+                                                    <li><a href="<?= isset($socmed->instagram) ? $socmed->instagram : '#' ?>"><i class="fa fa-instagram"></i></a>
                                                     </li>
-                                                    <li><a href="#"><i class="fa fa-youtube"></i></a>
+                                                    <li><a href="<?= isset($socmed->youtube) ? $socmed->youtube : '#' ?>"><i class="fa fa-youtube"></i></a>
                                                     </li>
-                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                                    <li><a href="<?= isset($socmed->gmail) ? $socmed->url_wa : '#' ?>"><i class="fa fa-google-plus"></i></a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="section5_item_author" style="margin-bottom:10px;margin-top:10px;">
-                                        <h5>Arif Fachrurozi</h5>
-                                        <span><b>(Marketing Auto 2000)</b></span>
+                                        <h5><?= $profile['name'] ?></h5>
+                                        <span><b>(<?= $profile['job'] ?>)</b></span>
                                     </div>
                                     <div class="section5_item_content">
-                                        <p><i>"... Marketing Terbaik dalam penjualan Mobil Toyota ..."</i></p>
+                                        <p><i>"<?= $profile['motto'] ?>"</i></p>
                                         <!-- <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -437,7 +390,7 @@ Author: Pemuda Solusi Teknologi
                         <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 col-lg-offset-3">
                             <div class="text-center">
                                 <div class="section_heading">
-                                    <h2><i class="fa fa-square"></i> What Client Say</h2>
+                                    <h2><i class="fa fa-square"></i> What Client Say :</h2>
                                 </div>
                                 <div class="section_content">
                                     <p>Testimonial dari para customer yang sudah mempercayakan kepada saya dalam
@@ -453,64 +406,29 @@ Author: Pemuda Solusi Teknologi
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                         <div class="testimonial_slider_wrapper">
                             <div class="owl-carousel owl-theme">
+                                <?php if ($customers) : 
+                                    foreach($testimonials as $testi) : 
+                                    ?>
                                 <div class="item">
                                     <div class="testimonial_slider_content">
-                                        <p>“This is Photoshop's version of Lorem Ipsum. Proin gravida nibh auctor
-                                            aliquet. sollicitudin, lorem quis bibendum auctor, nisi elit aks consequat
-                                            ipsum, nec sagittis sem nibh id elit.”</p>
+                                        <p>“<?= $testi['notes'] ?>”</p>
                                     </div>
                                     <div class="testimonial_slider_image">
-                                        <img src="<?= base_url() ?>/assets/template/assets/images/testimonialsimages/testi_img1.png"
-                                            class="img-responsive" alt="section3_t1__img" />
-                                    </div>
-                                    <div class="testimonial_slider_author">
-                                        <span>- by <b> Merry Jain</b> </span>
-                                    </div>
+                                        <?php if($testi['notes']) {
 
-                                </div>
-                                <div class="item">
-                                    <div class="testimonial_slider_content">
-                                        <p>“This is Photoshop's version of Lorem Ipsum. Proin gravida nibh auctor
-                                            aliquet. sollicitudin, lorem quis bibendum auctor, nisi elit aks consequat
-                                            ipsum, nec sagittis sem nibh id elit.”</p>
-
-                                    </div>
-                                    <div class="testimonial_slider_image">
-                                        <img src="<?= base_url() ?>/assets/template/assets/images/testimonialsimages/testi_img2.png"
-                                            class="img-responsive" alt="section3_t2__img" />
-                                    </div>
-                                    <div class="testimonial_slider_author">
-                                        <span> - by <b>Jhon Doe</b> </span>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimonial_slider_content">
-                                        <p>“This is Photoshop's version of Lorem Ipsum. Proin gravida nibh auctor
-                                            aliquet. sollicitudin, lorem quis bibendum auctor, nisi elit aks consequat
-                                            ipsum, nec sagittis sem nibh id elit.”</p>
-                                    </div>
-                                    <div class="testimonial_slider_image">
-                                        <img src="<?= base_url() ?>/assets/template/assets/images/testimonialsimages/testi_img3.png"
+                                         ?>
+                                        <img src="<?= base_url() ?>/upload/sales/testimonial/<?= $testi['image'] ?>"
                                             class="img-responsive" alt="section3_t1__img" />
+                                        <?php } else { ?>
+                                            <img src="<?= base_url() ?>/assets/template/assets/images/testimonialsimages/testi_img1.png"
+                                            class="img-responsive" alt="section3_t1__img" />
+                                        <?php } ?>
                                     </div>
                                     <div class="testimonial_slider_author">
-                                        <span> - by <b>Steffa Ferello</b> </span>
+                                        <span>- by <b> <?= $testi['name'] ?> </b> </span>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="testimonial_slider_content">
-                                        <p>“This is Photoshop's version of Lorem Ipsum. Proin gravida nibh auctor
-                                            aliquet. sollicitudin, lorem quis bibendum auctor, nisi elit aks consequat
-                                            ipsum, nec sagittis sem nibh id elit.”</p>
-                                    </div>
-                                    <div class="testimonial_slider_image">
-                                        <img src="<?= base_url() ?>/assets/template/assets/images/testimonialsimages/testi_img4.png"
-                                            class="img-responsive" alt="section3_t2__img" />
-                                    </div>
-                                    <div class="testimonial_slider_author">
-                                        <span> - by <b>Marie Porter</b> </span>
-                                    </div>
-                                </div>
+                                <?php endforeach; endif; ?>
                             </div>
                         </div>
                     </div>
@@ -568,9 +486,7 @@ Author: Pemuda Solusi Teknologi
                                 <div class="footer_icon_text">
                                     <div class="footer_icon_title">Location</div>
                                     <hr class="footer_yellow_hr">
-                                    <p>Toyota Auto 2000, <br>
-                                        5, Lala Lajpath Rai Marg <br>
-                                        Dewas, M.P. India 455001</p>
+                                    <p><?= $profile['address'] ?></p>
                                 </div>
                             </div>
                         </div>
@@ -646,7 +562,7 @@ Author: Pemuda Solusi Teknologi
             </div>
         </div>
         <div class="wa-show" id="btn-wa">
-            <a href="#div-order">
+            <a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#' ?>">
                 <img height="50px" class="shadow"
                     src="<?= base_url() ?>/assets/template/assets/images/icon/whatsapp.png"></a>
         </div>
