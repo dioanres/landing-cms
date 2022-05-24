@@ -90,6 +90,11 @@ class LoginController extends BaseController
         }
     }
 
+    public function update_password()
+    {
+        
+    }
+
     public function logout()
     {
         $session = session();

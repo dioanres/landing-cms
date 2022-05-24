@@ -26,7 +26,7 @@ class UserController extends BaseController
     public function addUser()
     {
         $data = [];
-        return view('user/form',['data' => null,'title' => 'Add User']);
+        return view('user/add',['data' => null,'title' => 'Add User']);
     }
 
     public function register()
@@ -41,13 +41,12 @@ class UserController extends BaseController
         ];
         
         if($validation->run($data, 'register')) {
-            $data['password'] = password_hash($data['password'],PASSWORD_DEFAULT);
-            //dd($data);
-            $this->model->save($data);
+            $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+            $save = $this->model->save($data);
+
             return redirect('admin/users');
-            //return view('user/index');
         } else {
-            return redirect()->route('admin/users/add');
+            return redirect()->back()->withInput('errors', $validation->getErrors());
         }
         
     }
@@ -55,7 +54,45 @@ class UserController extends BaseController
     public function edit($id = null)
     {
         $data = $this->model->find($id);
-        return view('user/form',['data' => $data]);
+
+        return view('user/edit',['data' => $data, 'title' => 'Edit User']);
+    }
+
+    public function update()
+    {
+        $validation =  \Config\Services::validation();
+
+        if($this->request->getPost('id')) {
+            try {
+                $data = [
+                    'username' => $this->request->getPost('username'),            
+                    'password' => $this->request->getPost('password'),
+                    'repeat_password' => $this->request->getPost('repeat_password'),
+                ];
+                
+                if ($data['password']) {
+                    $rule = 'update_password';
+                } else {
+                    $rule = 'update_user';
+                }
+
+                if ($validation->run($data, $rule)) {
+                    if ($data['password']) {
+                        $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+                    }
+
+                    $this->model->update($this->request->getPost('id'), $data);
+                    return redirect('admin/users');
+                }
+
+                return redirect()->back()->with('errors', $validation->getErrors());
+                
+            } catch (\Throwable $th) {
+                return redirect()->back()->with('errors', ['system' => $th->getMessage()]);
+            }
+        }
+        
+        return redirect()->back();
     }
 
 	//--------------------------------------------------------------------

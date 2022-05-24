@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<?= View('layout/header_top') ?>
+
+<head>
+    <?= View('layout/header_top') ?>
+    <title><?= $title ?></title>
+</head>
 
 <body id="page-top">
     <!-- Page Wrapper -->
@@ -20,12 +24,11 @@
                     <div class="container-fluid">
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary"><?= $title ?></h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Add User</h6>
                             </div>
                             <div class="card-body">
-                                <form class="user" method="post" action="/admin/pimpinan/save"
-                                    enctype="multipart/form-data">
-                                    <?= View('pimpinan/form') ?>
+                                <form class="user" method="post" action="/admin/users/register">
+                                <?= View('user/form') ?>
                                 </form>
                             </div>
                         </div>
@@ -39,10 +42,6 @@
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <?= View('layout/footer') ?>
-            <!-- End of Footer -->
-
         </div>
         <!-- End of Content Wrapper -->
 
@@ -53,10 +52,8 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
+
 </body>
+<?= View('layout/footer') ?>
 
 </html>
-
-<script>
-
-</script>

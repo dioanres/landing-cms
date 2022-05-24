@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <?= View('layout/header_top') ?>
-    <title><?= $title ?></title>
-</head>
-
+<?= View('layout/header_top') ?>
 <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -24,12 +19,12 @@
                     <div class="container-fluid">
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Add Company</h6>
+                                <h6 class="m-0 font-weight-bold text-primary"><?= $title ?></h6>
                             </div>
                             <div class="card-body">
-                                <form class="user" method="post" action="/admin/anakPerusahaan/save"
+                                <form class="user" method="post" action="/admin/users/update"
                                     enctype="multipart/form-data">
-                                    <?= View('anak_perusahaan/form') ?>
+                                    <?= View('user/form') ?>
                                 </form>
                             </div>
                         </div>

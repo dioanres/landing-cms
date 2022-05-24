@@ -99,6 +99,7 @@ $routes->group('admin',['filter' => 'auth'], function($routes)
 	$routes->add('users/add','UserController::addUser');
 	$routes->add('users/register','UserController::register');
 	$routes->get('users/edit/(:num)','UserController::edit/$1');
+	$routes->post('users/update','UserController::update');
 
 	//about us
 	$routes->get('aboutUs','AboutUsController');
