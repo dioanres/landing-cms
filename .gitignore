@@ -1,2 +1,4 @@
 /writable/
 .env
+/public/upload/
+/vendor
