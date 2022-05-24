@@ -122,7 +122,7 @@ Author: Pemuda Solusi Teknologi
                                 <li><a href="#4">Customers</a>
                                 </li>
                                 <li><a href="#6">Testimonials</a>
-                                        </li>
+                                </li>
                                 </li>
                                 <li><a href="#contact-us">Contact Us</a>
                                 </li>
@@ -390,22 +390,22 @@ Author: Pemuda Solusi Teknologi
                                     <div class="section5_item_imag main_wrapper">
                                         <img src="<?= base_url() ?>/assets/template/assets/images/photo/a.jpeg"
                                             class="img-responsive img-round image_wrapper" alt="section1_t1__img" />
-                                            <div class="image_wrapper_overlay">
-                                                <div class="content_wrapper">
-                                                    <h4>Arif Fachrurozi</h4>
-                                                    <h5>Marketing Auto 2000</h5>
-                                                    <ul class="social_icons">
-                                                        <li><a href="#"><i class="fa fa-whatsapp"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-instagram"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-youtube"></i></a>
-                                                        </li>
-                                                        <li><a href="#"><i class="fa fa-google-plus"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                        <div class="image_wrapper_overlay">
+                                            <div class="content_wrapper">
+                                                <h4>Arif Fachrurozi</h4>
+                                                <h5>Marketing Auto 2000</h5>
+                                                <ul class="social_icons">
+                                                    <li><a href="#"><i class="fa fa-whatsapp"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-instagram"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-youtube"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                                    </li>
+                                                </ul>
                                             </div>
+                                        </div>
                                     </div>
                                     <div class="section5_item_author" style="margin-bottom:10px;margin-top:10px;">
                                         <h5>Arif Fachrurozi</h5>
@@ -440,7 +440,8 @@ Author: Pemuda Solusi Teknologi
                                     <h2><i class="fa fa-square"></i> What Client Say</h2>
                                 </div>
                                 <div class="section_content">
-                                    <p>Testimonial dari para customer yang sudah mempercayakan kepada saya dalam pembelian Mobil.</p>
+                                    <p>Testimonial dari para customer yang sudah mempercayakan kepada saya dalam
+                                        pembelian Mobil.</p>
                                 </div>
                             </div>
                         </div>
@@ -652,6 +653,27 @@ Author: Pemuda Solusi Teknologi
     </div>
     <!-- footer end -->
 
+    <div class="modal fade" id="modal-notif" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -671,6 +693,13 @@ Author: Pemuda Solusi Teknologi
     <script src="<?= base_url() ?>/assets/template/assets/js/custom.js"></script>
 
     <script>
+
+    //notif modal
+
+    $(document).ready(function() {
+        $('#modal-notif').modal('show');
+    });
+
     //Side Menu js
 
     function openNav() {
@@ -710,10 +739,10 @@ Author: Pemuda Solusi Teknologi
         $('#modal-price').modal('show');
 
         function alignModal() {
-                
-                $(".modal-dialog").css("margin-top", Math.max(0, 
+
+            $(".modal-dialog").css("margin-top", Math.max(0,
                 ($(window).height() - $(".modal-dialog").height()) / 2));
-            }
+        }
         //css('margin-top', (Math.floor((window.innerHeight - $('.modal')[0].offsetHeight) / 2) + 'px'));
     });
     </script>

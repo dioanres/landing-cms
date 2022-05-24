@@ -14,6 +14,7 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
+
 AOS.init();
 
 var textWrapper = document.querySelector('.company-title');
