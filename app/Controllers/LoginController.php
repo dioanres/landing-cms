@@ -2,8 +2,6 @@
 
 use App\Models\UserModel;
 use App\Models\ActivityLoginModel;
-use App\Models\CompanyModel;
-use App\Models\SettingModel;
 use FlashData;
 use Session;
 
@@ -43,13 +41,9 @@ class LoginController extends BaseController
             //dd($user);
             if($user) {
                 if($user && $this->checkPassword($user,$data['password'])){
-                    $setting = $this->companyModel->where('id',0)->first();
-                    $data_setting = $this->settingModel->first();
                     $dataLogin = [
                         'isLogin' => true,
                         'user' => $user,
-                        'setting' => $setting,
-                        'data_setting' => $data_setting
                     ];
                     $user['last_login'] = date('Y-m-d h:i:s');
                     $this->model->update($user['id'],$user);
