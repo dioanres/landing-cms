@@ -49,7 +49,7 @@
                                                 cellspacing="0">
                                                 <thead>
                                                     <tr>
-                                                        <th>Name</th>
+                                                        <th width="20%">Name</th>
                                                         <th>Image</th>
                                                         <th>Description</th>
                                                         <th>Price</th>
@@ -61,9 +61,9 @@
                                                     <tr>
                                                         <td><?= $user['name'] ?></td>
                                                         <td><img src="<?php echo base_url('upload/sales/product').'/'.$user['image'] ?>"
-                                                                widht="400px" height="200px" /></td>
+                                                                widht="300px" height="150px" /></td>
                                                         <td><?= $user['desc'] ?></td>
-                                                        <td><?= $user['price'] ?></td>
+                                                        <td><?= number_format($user['price']) ?></td>
                                                         <td>
                                                             <a href="<?= base_url('admin/sales/product/edit').'/'.$user['id'] ?>"
                                                                 class="btn btn-primary btn-sm">

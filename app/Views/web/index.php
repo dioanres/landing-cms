@@ -653,26 +653,19 @@ Author: Pemuda Solusi Teknologi
     </div>
     <!-- footer end -->
 
+    <!-- Modal Notif -->
+    <?php if($notifications): ?>
     <div class="modal fade" id="modal-notif" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+            <img class="modal-content"
+                src="<?= base_url() ?>/upload/sales/notification/<?= $notifications['image'] ?>">
+            <div class="row text-center" style="margin-top:10px;">
+                <button id="other-price" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
+    <?php endif; ?>
 
 
     <!-- Bootstrap core JavaScript
@@ -693,7 +686,6 @@ Author: Pemuda Solusi Teknologi
     <script src="<?= base_url() ?>/assets/template/assets/js/custom.js"></script>
 
     <script>
-
     //notif modal
 
     $(document).ready(function() {
