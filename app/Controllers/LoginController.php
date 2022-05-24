@@ -13,9 +13,6 @@ class LoginController extends BaseController
 
     public function __construct()
     {
-        $this->model = new UserModel();
-        $this->companyModel = new CompanyModel();
-        $this->settingModel = new SettingModel();
         $this->activityLoginModel = new ActivityLoginModel();
         $this->validation =  \Config\Services::validation();
         
@@ -92,7 +89,7 @@ class LoginController extends BaseController
 
     public function update_password()
     {
-        
+
     }
 
     public function logout()
