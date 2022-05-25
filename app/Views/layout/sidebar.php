@@ -1,85 +1,90 @@
  <!-- Sidebar -->
  <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:#031940">
 
-<!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-  <div class="sidebar-brand-icon rotate-n-15">
-  
-  </div>
-  <div class="sidebar-brand-text mx-3">Dashboard CMS</div>
-</a>
+     <!-- Sidebar - Brand -->
+     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+         <div class="sidebar-brand-icon rotate-n-15">
 
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
+         </div>
+         <div class="sidebar-brand-text mx-3">Dashboard CMS</div>
+     </a>
 
-<!-- Nav Item - Dashboard -->
-<li class="nav-item">
-  <a class="nav-link" href="<?= route_to('admin/dashboard') ?>">
-    <i class="fas fa-fw fa-tachometer-alt"></i>
-    <span>Dashboard</span></a>
-</li>
+     <!-- Divider -->
+     <hr class="sidebar-divider my-0">
 
-<!-- Divider -->
-<hr class="sidebar-divider">
+     <!-- Nav Item - Dashboard -->
+     <li class="nav-item">
+         <a class="nav-link" href="<?= route_to('admin/dashboard') ?>">
+             <i class="fas fa-fw fa-tachometer-alt"></i>
+             <span>Dashboard</span></a>
+     </li>
+     <li class="nav-item">
+     <a class="nav-link" href="<?= base_url() ?>">
+     <i class="fas fa-link"></i>
+             <span>Go To Website</span></a>
+     </li>
 
-<!-- Heading -->
-<div class="sidebar-heading">
-  Menu
-</div>
-<li class="nav-item">
-  <a class="nav-link" href="<?= route_to('admin/sales/profile') ?>">
-    <i class="fas fa-fw fa-user"></i>
-    <span>Profile</span></a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="<?= route_to('admin/users') ?>">
-    <i class="fas fa-fw fa-folder"></i>
-    <span>Users</span></a>
-</li>
+     <!-- Divider -->
+     <hr class="sidebar-divider">
 
-<li class="nav-item">
-  <a class="nav-link" href="<?= route_to('admin/sales/banner') ?>">
-    <i class="fas fa-fw fa-folder"></i>
-    <span>Banner</span></a>
-</li>
+     <!-- Heading -->
+     <div class="sidebar-heading">
+         Menu
+     </div>
+     <li class="nav-item">
+         <a class="nav-link" href="<?= route_to('admin/sales/profile') ?>">
+             <i class="fas fa-fw fa-user"></i>
+             <span>Profile</span></a>
+     </li>
+     <li class="nav-item">
+         <a class="nav-link" href="<?= route_to('admin/users') ?>">
+             <i class="fas fa-fw fa-folder"></i>
+             <span>Users</span></a>
+     </li>
 
-<li class="nav-item">
-  <a class="nav-link" href="<?= route_to('admin/sales/product') ?>">
-    <i class="fas fa-fw fa-folder"></i>
-    <span>Products</span></a>
-</li>
+     <li class="nav-item">
+         <a class="nav-link" href="<?= route_to('admin/sales/banner') ?>">
+             <i class="fas fa-fw fa-folder"></i>
+             <span>Banner</span></a>
+     </li>
 
-<li class="nav-item">
-  <a class="nav-link" href="<?= route_to('admin/sales/customer') ?>">
-    <i class="fas fa-fw fa-folder"></i>
-    <span>Customer Deliveries</span></a>
-</li>
+     <li class="nav-item">
+         <a class="nav-link" href="<?= route_to('admin/sales/product') ?>">
+             <i class="fas fa-fw fa-folder"></i>
+             <span>Products</span></a>
+     </li>
 
-<li class="nav-item">
-  <a class="nav-link" href="<?= route_to('admin/sales/testimonial') ?>">
-    <i class="fas fa-fw fa-folder"></i>
-    <span>Testimonials</span></a>
-</li>
+     <li class="nav-item">
+         <a class="nav-link" href="<?= route_to('admin/sales/customer') ?>">
+             <i class="fas fa-fw fa-folder"></i>
+             <span>Customer Deliveries</span></a>
+     </li>
 
-<li class="nav-item">
-  <a class="nav-link" href="<?= route_to('admin/sales/notification') ?>">
-    <i class="fas fa-fw fa-folder"></i>
-    <span>Notifications</span></a>
-</li>
+     <li class="nav-item">
+         <a class="nav-link" href="<?= route_to('admin/sales/testimonial') ?>">
+             <i class="fas fa-fw fa-folder"></i>
+             <span>Testimonials</span></a>
+     </li>
 
-<!-- <li class="nav-item">
+     <li class="nav-item">
+         <a class="nav-link" href="<?= route_to('admin/sales/notification') ?>">
+             <i class="fas fa-fw fa-folder"></i>
+             <span>Notifications</span></a>
+     </li>
+
+     <!-- <li class="nav-item">
   <a class="nav-link" href="<?= route_to('admin/setting') ?>">
     <i class="fas fa-fw fa-folder"></i>
     <span>Setting</span></a>
 </li> -->
 
-<!-- Divider -->
-<hr class="sidebar-divider d-none d-md-block">
+     <!-- Divider -->
+     <hr class="sidebar-divider d-none d-md-block">
 
-<!-- Sidebar Toggler (Sidebar) -->
-<div class="text-center d-none d-md-inline">
-  <button class="rounded-circle border-0" id="sidebarToggle"></button>
-</div>
+     <!-- Sidebar Toggler (Sidebar) -->
+     <div class="text-center d-none d-md-inline">
+         <button class="rounded-circle border-0" id="sidebarToggle"></button>
+     </div>
 
-</ul>
-<!-- End of Sidebar -->
+ </ul>
+ <!-- End of Sidebar -->
