@@ -31,6 +31,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->post('/send_question', 'Home::send_message');
 $routes->get('/detailAp/(:num)','CompanyController::getDetailById/$1');
 
 $routes->add('login', 'LoginController::login');

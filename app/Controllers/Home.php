@@ -17,11 +17,6 @@ class Home extends BaseController
 		$this->bannerModel	= new BannerModel();
 		$this->productModel	= new ProductModel();
 		$this->testimoniModel = new TestimonialModel();
-		// $this->pimpinanModel = new PimpinanModel();
-		// $this->reviewModel = new ReviewModel();
-		// $this->galleryModel = new GalleryModel();
-		// $this->settingModel = new SettingModel();
-		// $this->teamModel = new TeamModel();
 	}
 	
 	public function index()
@@ -38,6 +33,17 @@ class Home extends BaseController
 		$data['socmed'] = json_decode($data['profile']['meta_socmed']);
 		
 		return view('web/index', $data);
+	}
+
+	public function send_message()
+	{
+		$name = $this->request->getPost('name');
+		$question = $this->request->getPost('question');
+		$profile = $this->profileModel->first();
+		$socmed = \json_decode($profile['meta_socmed']);
+		$url = 'https://wa.me/'.$socmed->whatsapp.'?text='.urlencode($question);
+
+		return redirect()->to($url);
 	}
 
 	//--------------------------------------------------------------------

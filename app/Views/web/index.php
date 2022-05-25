@@ -445,23 +445,17 @@ Author: Pemuda Solusi Teknologi
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="form-bg">
-                            <form>
+                            <form method="post" action="/send_question">
                                 <div class="form-group">
                                     <label class="sr-only">Name</label>
-                                    <input type="text" class="form-control" required="" id="nameNine"
+                                    <input type="text" name="name" class="form-control" required="" id="nameNine"
                                         placeholder="Your Name">
                                 </div>
                                 <div class="form-group">
-                                    <label class="sr-only">Email</label>
-                                    <input type="email" class="form-control" required="" id="emailNine"
-                                        placeholder="Email Address">
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only">Name</label>
-                                    <textarea class="form-control" required="" rows="7" id="messageNine"
+                                    <textarea class="form-control" name="question" required="" rows="7" id="messageNine"
                                         placeholder="Write message"></textarea>
                                 </div>
-                                <button type="submit" class="btn text-center btn-blue">Send Message</button>
+                                <button type="submit" class="btn text-center btn-blue">Send Question</button>
                             </form>
                         </div>
                     </div>
@@ -484,7 +478,7 @@ Author: Pemuda Solusi Teknologi
                                         alt="ic-loc">
                                 </div>
                                 <div class="footer_icon_text">
-                                    <div class="footer_icon_title">Location</div>
+                                    <div class="footer_icon_title">Address</div>
                                     <hr class="footer_yellow_hr">
                                     <p><?= $profile['address'] ?></p>
                                 </div>
@@ -501,9 +495,9 @@ Author: Pemuda Solusi Teknologi
                                 <div class="footer_icon_text">
                                     <div class="footer_icon_title">Phone | Email</div>
                                     <hr class="footer_green_hr">
-                                    <p><b>Phone</b> :- 7272 245 015<br>
-                                        <b>Mobile</b> :- + 91 245 0154<br>
-                                        <b>E-Mail</b> :- <a href="#">ariftoyota@gmail.com</a>
+                                    <p><b>Phone</b> :<?= isset($profile['phone']) ? $profile['phone'] : '-' ?><br>
+                                        <b>Whatsapp</b> : <a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#'  ?>"><?= isset($socmed->whatsapp) ? $socmed->whatsapp : '-'  ?></a><br>
+                                        <b>E-Mail</b> : <a href="#"><?= isset($socmed->email) ? $socmed->email : '-'  ?></a>
                                     </p>
                                 </div>
                             </div>
@@ -519,9 +513,9 @@ Author: Pemuda Solusi Teknologi
                                 <div class="footer_icon_text">
                                     <div class="footer_icon_title">Working Hours</div>
                                     <hr class="footer_blue_hr">
-                                    <p><b> Mon - Fri </b> :- 9am - 6pm<br>
-                                        <b>Saturday</b> :- 9am - 4pm<br>
-                                        <b>Sunday</b> :- <a href="#" class="closed">Closed</a>
+                                    <p><b> Senin - Jumat </b> :- 9am - 6pm<br>
+                                        <b>Sabtu</b> :- 9am - 4pm<br>
+                                        <b>Minggu</b> :- <a href="#" class="closed">Closed</a>
                                     </p>
                                 </div>
                             </div>
@@ -541,20 +535,17 @@ Author: Pemuda Solusi Teknologi
                     <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
                         <div class="footer_menu">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook-square"></i></a>
+                                <li><a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#'  ?>"><i class="fa fa-whatsapp"></i></a>
                                 </li>
-                                <li><a href="#"><i class="fa fa-twitter-square"></i></a>
-                                </li>
-                                <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
-                                <li><a href="#"><i class="fa fa-linkedin-square"></i></a>
+                                <li> <a href="http://instagram.com/_u/<?= isset($socmed->instagram) ? $socmed->instagram.'/' : '#'  ?>"><i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+                                <li><a href="<?= isset($socmed->linkedin) ? $socmed->linkedin : '#'  ?>"><i class="fa fa-linkedin-square"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"> <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                                    <a href="<?= isset($socmed->youtube) ? $socmed->youtube : '#'  ?>"> <i class="fa fa-youtube" aria-hidden="true"></i>
                                     </a>
                                 </li>
-                                <li><a href="#"><i class="fa fa-google-plus-square"></i></a>
+                                <li><a href="mailto:<?= isset($socmed->email) ? $socmed->email : '#'  ?>"><i class="fa fa-google-plus-square"></i></a>
                                 </li>
-                                <li> <a href="#"><i class="fa fa-vimeo-square" aria-hidden="true"></i> </a> </li>
                             </ul>
                         </div>
                     </div>

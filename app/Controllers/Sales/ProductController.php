@@ -12,7 +12,7 @@ class ProductController extends BaseController
 
 	public function index()
 	{	 
-        $data = $this->model->findAll();
+        $data = $this->model->orderBy('id', 'desc')->findAll();
         $title = 'Product';
         
 		return view('sales/product/index',['data' => $data, 'title' => $title]);

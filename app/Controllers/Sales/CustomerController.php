@@ -12,7 +12,7 @@ class CustomerController extends BaseController
 
 	public function index()
 	{	 
-        $data = $this->model->findAll();
+        $data = $this->model->orderBy('id', 'desc')->findAll();
         $title = 'Customer Delivery';
         
 		return view('sales/customer/index',['data' => $data, 'title' => $title]);

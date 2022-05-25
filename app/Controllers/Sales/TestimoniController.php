@@ -12,7 +12,7 @@ class TestimoniController extends BaseController
 
 	public function index()
 	{	 
-        $data = $this->model->findAll();
+        $data = $this->model->orderBy('id', 'desc')->findAll();
         $title = 'Testimonial';
         
 		return view('sales/testimonial/index',['data' => $data, 'title' => $title]);
