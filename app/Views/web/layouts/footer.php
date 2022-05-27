@@ -1,39 +1,74 @@
-<!-- Footer -->
-<div class="pt-5 text-center footer">
-    <hr />
-    <?php foreach ($data['tentang_kami'] as $val) : ?>
-    <div class="py-3">
-        <img src="<?php echo base_url('upload/logo_ap').'/'.$val['logo'] ?>" alt="">
-        <h5>- FROM US, FOR US -</h5>
-        <h5>© 2022 PT Tunas Multi Sinergi Group</h5>
-    </div>
-    <?php endforeach ?>
-</div>
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+ <!-- Bootstrap js -->
+ <script src="<?= base_url() ?>/assets/template/assets/js/jquery.min.js"></script>
+ <script src="<?= base_url() ?>/assets/template/assets/js/bootstrap.min.js"></script>
+ <!-- Owl Carousel js -->
+ <script src="<?= base_url() ?>/assets/template/assets/js/owl.carousel.js"></script>
+ <!-- Progress Bar js -->
+ <script src="<?= base_url() ?>/assets/template/assets/js/jquery.inview.min.js"></script>
+ <script src="<?= base_url() ?>/assets/template/assets/js/jquery.shuffle.min.js"></script>
+ <!-- Counters js -->
+ <script src="<?= base_url() ?>/assets/template/assets/js/jquery.easypiechart.min.js"></script>
+ <!-- Magnific Popup js -->
+ <script src="<?= base_url() ?>/assets/template/assets/js/jquery.magnific-popup.min.js"></script>
+ 
+ <!-- Custom js -->
+ <script src="<?= base_url() ?>/assets/template/assets/js/custom.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 
 
-<script>
+ <script>
+//notif modal
 
-AOS.init();
+$(document).ready(function() {
+    $('#modal-notif').modal('show');
+});
 
-var textWrapper = document.querySelector('.company-title');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+//Side Menu js
 
-anime.timeline({
-        loop: true
-    })
-    .add({
-        targets: '.company-title .letter',
-        opacity: [0, 1],
-        easing: "easeInOutQuad",
-        duration: 2250,
-        delay: (el, i) => 150 * (i + 1)
-    }).add({
-        targets: '.company-title',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+function initMap() {
+    var uluru = {
+        lat: -36.742775,
+        lng: 174.731559
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        scrollwheel: false,
+        center: uluru
     });
-</script>
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+}
+
+$(window).scroll(function() {
+    var window_top = $(window).scrollTop() + 1;
+    if (window_top > 50) {
+        $('.section2_menu_wrapper').addClass('menu_fixed animated fadeInDown');
+    } else {
+        $('.section2_menu_wrapper').removeClass('menu_fixed animated fadeInDown');
+    }
+});
+
+$('#other-price').click(function() {
+    $('#modal-price').modal('show');
+
+    function alignModal() {
+
+        $(".modal-dialog").css("margin-top", Math.max(0,
+            ($(window).height() - $(".modal-dialog").height()) / 2));
+    }
+    //css('margin-top', (Math.floor((window.innerHeight - $('.modal')[0].offsetHeight) / 2) + 'px'));
+});
+ </script>

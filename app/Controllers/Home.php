@@ -46,6 +46,18 @@ class Home extends BaseController
 		return redirect()->to($url);
 	}
 
+	public function all_products()
+	{
+		$data = [
+			'profile'	=> $this->profileModel->first(),
+			'products'	=> $this->productModel->findAll(),
+		];
+
+		$data['socmed'] = json_decode($data['profile']['meta_socmed']);
+
+		return view('web/all_products', $data);
+	}
+
 	//--------------------------------------------------------------------
 
 }

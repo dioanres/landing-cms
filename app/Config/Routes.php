@@ -32,7 +32,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->post('/send_question', 'Home::send_message');
-$routes->get('/detailAp/(:num)','CompanyController::getDetailById/$1');
+$routes->get('/all-products','Home::all_products');
 
 $routes->add('login', 'LoginController::login');
 $routes->get('logout', 'LoginController::logout');

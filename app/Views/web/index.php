@@ -12,20 +12,9 @@ Author: Pemuda Solusi Teknologi
 <?= View('/web/layouts/header') ?>
 
 <body>
-    <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="status">
-            <div class="status-mes"></div>
-        </div>
-    </div>
-
-    <!-- section_1 start-->
-    <div data-scroll='0' class="">
-        <div>
-            <!--Slider area start here-->
-            <section class="slider-area">
+    <?= View('/web/layouts/menu') ?>
+    <!--Slider area start here-->
+    <section data-scroll='0'  class="slider-area" id="0">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd-0">
@@ -60,74 +49,6 @@ Author: Pemuda Solusi Teknologi
             </section>
 
             <!--Slider area end here-->
-
-            <!-- section1_menu_wrapper start here -->
-
-            <div class="section2_menu_wrapper">
-                <div class="container">
-                    <div class="row section2_header">
-                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-3">
-                            <div class="logo_wrapper">
-                                <a href="../index.html"><img style="height:35px;"
-                                        src="<?= base_url() ?>/assets/template/assets/images/section3_logo.png"
-                                        class="img-responsive" alt="section2_logo_img" />
-                                </a>
-                            </div>
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target="#section2_responsive_nav">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-
-                        <div class="col-lg-8 col-md-8 col-sm-9 hidden-xs">
-                            <nav class="navbar navbar-inverse">
-
-                                <div class="collapse navbar-collapse" id="mySidenav">
-                                    <ul class="nav navbar-nav">
-                                        <li class="active"><a href="0">Home</a>
-                                        </li>
-                                        <li><a href="#5">Top Products</a>
-                                        </li>
-                                        <li><a href="#4">Customers</a>
-                                        </li>
-                                        <li><a href="#6">Testimonials</a>
-                                        </li>
-                                        <li><a href="#contact-us">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </nav>
-                        </div>
-
-                    </div>
-                    <div class="visible-xs">
-                        <div class="collapse navbar-collapse" id="section2_responsive_nav">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a>
-                                </li>
-                                <li><a href="#5">Top Products</a>
-                                </li>
-                                <li><a href="#4">Customers</a>
-                                </li>
-                                <li><a href="#6">Testimonials</a>
-                                </li>
-                                </li>
-                                <li><a href="#contact-us">Contact Us</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- section1_menu_wrapper end here -->
-        </div>
-    </div>
-
     <div data-scroll='5' id="5" class="full_width">
         <!-- portfolio_section start -->
         <div class="portfolio_section">
@@ -465,100 +386,7 @@ Author: Pemuda Solusi Teknologi
         <!-- contact_section end -->
 
     </div>
-    <!-- footer start -->
-    <div class="footer" id="contact-us">
-        <div class="container">
-            <div class="row">
-                <div class="footer_copyright_image">
-                    <div class="col-xs-12 col-md-4 col-lg-4 col-sm-6">
-                        <div class="media">
-                            <div class="media-body">
-                                <div class="footer_icon">
-                                    <img src="<?= base_url() ?>/assets/template/assets/images/footer-images/location.png"
-                                        alt="ic-loc">
-                                </div>
-                                <div class="footer_icon_text">
-                                    <div class="footer_icon_title">Address</div>
-                                    <hr class="footer_yellow_hr">
-                                    <p><?= $profile['address'] ?></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4 col-lg-4 col-sm-6">
-                        <div class="media">
-                            <div class="media-body">
-                                <div class="footer_icon">
-                                    <img src="<?= base_url() ?>/assets/template/assets/images/footer-images/phone.png"
-                                        alt="ic-loc">
-                                </div>
-                                <div class="footer_icon_text">
-                                    <div class="footer_icon_title">Phone | Email</div>
-                                    <hr class="footer_green_hr">
-                                    <p><b>Phone</b> :<?= isset($profile['phone']) ? $profile['phone'] : '-' ?><br>
-                                        <b>Whatsapp</b> : <a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#'  ?>"><?= isset($socmed->whatsapp) ? $socmed->whatsapp : '-'  ?></a><br>
-                                        <b>E-Mail</b> : <a href="#"><?= isset($socmed->email) ? $socmed->email : '-'  ?></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4 col-lg-4 col-sm-6">
-                        <div class="media timing">
-                            <div class="media-body">
-                                <div class="footer_icon">
-                                    <img src="<?= base_url() ?>/assets/template/assets/images/footer-images/time.png"
-                                        alt="ic-loc">
-                                </div>
-                                <div class="footer_icon_text">
-                                    <div class="footer_icon_title">Working Hours</div>
-                                    <hr class="footer_blue_hr">
-                                    <p><b> Senin - Jumat </b> :- 9am - 6pm<br>
-                                        <b>Sabtu</b> :- 9am - 4pm<br>
-                                        <b>Minggu</b> :- <a href="#" class="closed">Closed</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer_copyright_text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-xs-12 col-sm-6">
-                        <div class="footer_copyright">
-                            <p>© Copyright 2022 By Arif Toyota - all right reserved</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#'  ?>"><i class="fa fa-whatsapp"></i></a>
-                                </li>
-                                <li> <a href="http://instagram.com/_u/<?= isset($socmed->instagram) ? $socmed->instagram.'/' : '#'  ?>"><i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
-                                <li><a href="<?= isset($socmed->linkedin) ? $socmed->linkedin : '#'  ?>"><i class="fa fa-linkedin-square"></i></a>
-                                </li>
-                                <li>
-                                    <a href="<?= isset($socmed->youtube) ? $socmed->youtube : '#'  ?>"> <i class="fa fa-youtube" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li><a href="mailto:<?= isset($socmed->email) ? $socmed->email : '#'  ?>"><i class="fa fa-google-plus-square"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wa-show" id="btn-wa">
-            <a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#' ?>">
-                <img height="50px" class="shadow"
-                    src="<?= base_url() ?>/assets/template/assets/images/icon/whatsapp.png"></a>
-        </div>
-    </div>
-    <!-- footer end -->
+    <?= View('/web/layouts/section_footer') ?>
 
     <!-- Modal Notif -->
     <?php if($notifications): ?>
@@ -573,79 +401,8 @@ Author: Pemuda Solusi Teknologi
         </div>
     </div>
     <?php endif; ?>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- Bootstrap js -->
-    <script src="<?= base_url() ?>/assets/template/assets/js/jquery.min.js"></script>
-    <script src="<?= base_url() ?>/assets/template/assets/js/bootstrap.min.js"></script>
-    <!-- Owl Carousel js -->
-    <script src="<?= base_url() ?>/assets/template/assets/js/owl.carousel.js"></script>
-    <!-- Progress Bar js -->
-    <script src="<?= base_url() ?>/assets/template/assets/js/jquery.inview.min.js"></script>
-    <!-- Counters js -->
-    <script src="<?= base_url() ?>/assets/template/assets/js/jquery.easypiechart.min.js"></script>
-    <!-- Magnific Popup js -->
-    <script src="<?= base_url() ?>/assets/template/assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Custom js -->
-    <script src="<?= base_url() ?>/assets/template/assets/js/custom.js"></script>
-
-    <script>
-    //notif modal
-
-    $(document).ready(function() {
-        $('#modal-notif').modal('show');
-    });
-
-    //Side Menu js
-
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-
-    function initMap() {
-        var uluru = {
-            lat: -36.742775,
-            lng: 174.731559
-        };
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            scrollwheel: false,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
-    }
-
-    $(window).scroll(function() {
-        var window_top = $(window).scrollTop() + 1;
-        if (window_top > 50) {
-            $('.section2_menu_wrapper').addClass('menu_fixed animated fadeInDown');
-        } else {
-            $('.section2_menu_wrapper').removeClass('menu_fixed animated fadeInDown');
-        }
-    });
-
-    $('#other-price').click(function() {
-        $('#modal-price').modal('show');
-
-        function alignModal() {
-
-            $(".modal-dialog").css("margin-top", Math.max(0,
-                ($(window).height() - $(".modal-dialog").height()) / 2));
-        }
-        //css('margin-top', (Math.floor((window.innerHeight - $('.modal')[0].offsetHeight) / 2) + 'px'));
-    });
-    </script>
-
+    
+    <?= View('/web/layouts/footer') ?>
 </body>
 
 </html>

@@ -28,7 +28,7 @@
     <!-- Style Css -->
     <link href="<?= base_url() ?>/assets/template/assets/css/style.css" rel="stylesheet">
     <link href="<?= base_url() ?>/assets/template/assets/css/basic_slider_2.css" rel="stylesheet">
-    <link href="<?= base_url() ?>/assets/template/assets/css/basic_slider_2.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/assets/template/assets/css/portfolio_grid_style_6.css" rel="stylesheet">
 
     <style>
     .wa-show {
