@@ -16,7 +16,6 @@ class ProductModel extends BaseModel
     protected $validationRules    = [
         'name'  => 'required',
         'image' => 'required|is_image[image]|max_size[image, 2048]',
-        'price' => 'required|numeric'
     ];
     protected $validationMessages = [
         'name'  => [
