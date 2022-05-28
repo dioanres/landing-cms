@@ -1167,13 +1167,14 @@ header{
 .project_title h4{
 	font-size:18px;
 	font-weight:bold;
+	text-align: center;
 }
 .project_title h4 a{
 	color:#111111;
 }
-.project_title{
+/* .project_title{
 	padding-bottom:20px;
-}
+} */
 .project_likes a i{
 	color:#3baed4;
 }

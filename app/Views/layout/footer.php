@@ -62,21 +62,36 @@
 <script src="<?= base_url() ?>/assets/sb_admin2/vendor1/datatables/dataTables.bootstrap4.min.js"></script>
 
 <script>
-
-var notif_error = '<?= session()->getFlashdata('error')?>'; 
+var notif_error = '<?= session()->getFlashdata('error')?>';
 if (notif_error) {
-  $('#notif-error').modal('show');
+    $('#notif-error').modal('show');
 }
 CKEDITOR.replace('.ckeditor', {
-        height:'200px'
+    height: '200px'
 });
 
 // Add the following code if you want the name of the file appear on select
 $(".custom-file-input").on("change", function() {
-  $('.show-img-ready').remove();
-  var fileName = $(this).val().split("\\").pop();
-  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    $('.show-img-ready').remove();
+    var fileName = $(this).val().split("\\").pop();
+    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
 });
 
-console.log($(".custom-file-input").val());
+$(document).ready(function() {
+    delete_sub();
+    $('#add-sub-product').click(function() {
+        console.log(23);
+        let form =
+            '<div class="form-group row"> <div class="col-sm-4 mb-3 mb-sm-0"> <input type="text" class="form-control" placeholder="Nama Sub Produk" name="sub_product_name[]"> </div> <div class="col-sm-2 mb-3 mb-sm-0"> <input type="text" class="form-control" placeholder="Harga" name="sub_product_price[]"> </div> <div class="col-sm-2 mb-3 mb-sm-0"> <button type="button" class="btn btn-danger delete-sub"> x </button> </div> </div>';
+        $('#form-sub').append(form);
+        delete_sub();
+    });
+})
+
+function delete_sub()
+{
+    $('.delete-sub').click(function(){
+        $(this).parent().parent().remove();
+    });
+}
 </script>

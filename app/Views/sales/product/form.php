@@ -45,12 +45,68 @@
         } ?>
     </div>
 </div>
+<div class="form-group row ml-1 mt-4">
+    <table width="25%">
+        <tr>
+            <td>
+                <h5><strong>Sub Products</strong></h5>
+            </td>
+            <td>
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <button type="button" class="btn btn-primary btn-circle" id="add-sub-product"> <i
+                            class="fas fa-plus"></i></button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="form-sub">
+    <?php if($sub_products): foreach($sub_products as $key => $sub): ?>
+        <div class="form-group row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+            <input type="text" class="form-control" placeholder="Nama Sub Produk" value="<?= $sub['sub_product_name'] ?>" name="sub_product_name[]">
+            <?php if (isset($errors['sub_product_name'])) {
+             echo '<span class="text-red">'.$errors['sub_product_name'].'</span>';
+        } ?>
+        </div>
+
+        <div class="col-sm-2 mb-3 mb-sm-0">
+            <input type="text" class="form-control" placeholder="Harga" value="<?= $sub['sub_product_price'] ?>" name="sub_product_price[]">
+            <?php if (isset($errors['sub_product_price'])) {
+             echo '<span class="text-red">'.$errors['sub_product_price'].'</span>';
+        } ?>
+        </div>
+
+        <?php if($key != 0): ?>
+            <div class="col-sm-2 mb-3 mb-sm-0"> <button type="button" class="btn btn-danger delete-sub"> x </button> </div>
+        <?php endif; ?>
+    </div>
+    <?php endforeach; else: ?>
+    <div class="form-group row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+            <input type="text" class="form-control" placeholder="Nama Sub Produk" name="sub_product_name[]">
+            <?php if (isset($errors['sub_product_name'])) {
+             echo '<span class="text-red">'.$errors['sub_product_name'].'</span>';
+        } ?>
+        </div>
+
+        <div class="col-sm-2 mb-3 mb-sm-0">
+            <input type="text" class="form-control" placeholder="Harga" name="sub_product_price[]">
+            <?php if (isset($errors['sub_product_price'])) {
+             echo '<span class="text-red">'.$errors['sub_product_price'].'</span>';
+        } ?>
+        </div>
+    </div>
+    <?php endif; ?>
+</div>
+
 <?php if (isset($errors['system'])) {
     echo '<span class="text-red">'.$errors['system'].'</span>';
 } ?>
 <div class="row">
     <div class="col-sm-3 mb-3 mb-sm-0">
-        <button class="btn btn-success btn-block">
+        <button class="btn btn-primary btn-block">
             Save
         </button>
     </div>

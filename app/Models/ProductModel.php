@@ -15,7 +15,6 @@ class ProductModel extends BaseModel
 
     protected $validationRules    = [
         'name'  => 'required',
-        'desc'  => 'required',
         'image' => 'required|is_image[image]|max_size[image, 2048]',
         'price' => 'required|numeric'
     ];
@@ -33,7 +32,7 @@ class ProductModel extends BaseModel
         ],
         'price' => [
             'required'  => 'Harga Wajib di isi',
-            'numeric'   => 'Input harus berupa Angka.'
+            'numeric'   => 'Harga harus berupa Angka.'
         ]
     ];
     protected $skipValidation     = false;

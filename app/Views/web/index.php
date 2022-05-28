@@ -14,41 +14,40 @@ Author: Pemuda Solusi Teknologi
 <body>
     <?= View('/web/layouts/menu') ?>
     <!--Slider area start here-->
-    <section data-scroll='0'  class="slider-area" id="0">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd-0">
-                            <div id="carouselExampleIndicators" class="slide carousel" data-ride="carousel">
-                                <div class="carousel-inner" role="listbox">
-                                    <?php if ($banners): 
+    <section data-scroll='0' class="slider-area" id="0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd-0">
+                    <div id="carouselExampleIndicators" class="slide carousel" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <?php if ($banners): 
                                         foreach ($banners as $key => $banner) :    
                                     ?>
-                                    <div class="item <?= $key == 0 ? 'active' : '' ?>">
-                                        <img src="<?= base_url() ?>/upload/sales/banner/<?= $banner['image'] ?>"
-                                            alt="" />
-                                        <div class="carousel-caption one">
-                                            <div class="slider_content">
+                            <div class="item <?= $key == 0 ? 'active' : '' ?>">
+                                <img src="<?= base_url() ?>/upload/sales/banner/<?= $banner['image'] ?>" alt="" />
+                                <div class="carousel-caption one">
+                                    <div class="slider_content">
 
-                                                <ul>
-                                                    <li class="animated bounceInLeft"><a href="#5">Shop Now</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <ul>
+                                            <li class="animated bounceInLeft"><a href="#5">Shop Now</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <?php endforeach; endif; ?>
                                 </div>
-                                <a class="carousel-control-prev carousel-control" href="#carouselExampleIndicators"
-                                    role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                                <a class="carousel-control-next carousel-control" href="#carouselExampleIndicators"
-                                    role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
                             </div>
+                            <?php endforeach; endif; ?>
                         </div>
+                        <a class="carousel-control-prev carousel-control" href="#carouselExampleIndicators"
+                            role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                        <a class="carousel-control-next carousel-control" href="#carouselExampleIndicators"
+                            role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!--Slider area end here-->
+    <!--Slider area end here-->
     <div data-scroll='5' id="5" class="full_width">
         <!-- portfolio_section start -->
         <div class="portfolio_section">
@@ -76,76 +75,58 @@ Author: Pemuda Solusi Teknologi
                             <div class="tab-content">
                                 <div id="all_items" class="tab-pane fade in active">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-1.png"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Yaris GR</a></h4>
-                                                        <span>Rp 250.000.000,-</span>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <span><a href="#">Cek Angsuran</a></span>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><img height="30px"
-                                                                src="<?= base_url() ?>/assets/template/assets/images/icon/whatsapp.png"></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/rush.png"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Toyota Rush</a></h4>
-                                                        <span>Rp 350.000.000,-</span>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <span><a href="#">Cek Angsuran</a></span>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><img height="30px"
-                                                                src="<?= base_url() ?>/assets/template/assets/images/icon/whatsapp.png"></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <div class="tab_image_wrapper">
-                                                <div class="tab_image">
-                                                    <figure>
-                                                        <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/raize.png"
-                                                            class="img-responsive" alt="team1_img" />
-                                                    </figure>
-                                                </div>
-                                                <div class="tab_image_text">
-                                                    <div class="project_title">
-                                                        <h4><a href="#">Toyota Raize</a></h4>
-                                                        <span>Rp 350.000.000,-</span>
-                                                    </div>
-                                                    <div class="project_category">
-                                                        <span><a href="#">Cek Angsuran</a></span>
-                                                    </div>
-                                                    <div class="project_likes">
-                                                        <a href="#"><img height="30px"
-                                                                src="<?= base_url() ?>/assets/template/assets/images/icon/whatsapp.png"></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
+                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                                            <a class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="tab_image_wrapper">
+                                                    <div class="tab_image">
+                                                        <figure>
+                                                            <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-1.png"
+                                                                class="img-responsive" alt="team1_img" />
+                                                        </figure>
+                                                    </div>
+                                                    <div class="tab_image_text">
+                                                        <div class="project_title">
+                                                            <h4>Yaris GR</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                                            <a class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="tab_image_wrapper">
+                                                    <div class="tab_image">
+                                                        <figure>
+                                                            <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/rush.png"
+                                                                class="img-responsive" alt="team1_img" />
+                                                        </figure>
+                                                    </div>
+                                                    <div class="tab_image_text">
+                                                        <div class="project_title">
+                                                            <h4>RUSH</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                                            <a class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                <div class="tab_image_wrapper">
+                                                    <div class="tab_image">
+                                                        <figure>
+                                                            <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/raize.png"
+                                                                class="img-responsive" alt="team1_img" />
+                                                        </figure>
+                                                    </div>
+                                                    <div class="tab_image_text">
+                                                        <div class="project_title">
+                                                            <h4>RAIZE</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -174,25 +155,6 @@ Author: Pemuda Solusi Teknologi
 
         </div>
     </div>
-    <!-- <div id="modal-price" class="modal">
-            <div class="container">
-                <div class="row">
-                    <span class="close">&times;</span>
-                </div>
-                <div class="row">
-                    <img class="modal-content modal-dialog"
-                        src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/harga.jpeg">
-                </div>
-                <div class="row text-center" style="margin-top:10px;">
-                <button id="other-price" class="btn btn-danger" data-dismiss="modal">Kembali</button>
-                </div>
-
-
-                <div id="caption"></div>
-            </div>
-        </div> -->
-
-    <!-- End Moodal -->
     <!-- portfolio_section end-->
     </div>
     <div data-scroll='4' id="4" class="full_width">
@@ -269,13 +231,19 @@ Author: Pemuda Solusi Teknologi
                                                 <h4><?= $profile['name'] ?></h4>
                                                 <h5><?= $profile['job'] ?></h5>
                                                 <ul class="social_icons">
-                                                    <li><a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#' ?>"><i class="fa fa-whatsapp"></i></a>
+                                                    <li><a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#' ?>"><i
+                                                                class="fa fa-whatsapp"></i></a>
                                                     </li>
-                                                    <li><a href="<?= isset($socmed->instagram) ? $socmed->instagram : '#' ?>"><i class="fa fa-instagram"></i></a>
+                                                    <li><a
+                                                            href="<?= isset($socmed->instagram) ? $socmed->instagram : '#' ?>"><i
+                                                                class="fa fa-instagram"></i></a>
                                                     </li>
-                                                    <li><a href="<?= isset($socmed->youtube) ? $socmed->youtube : '#' ?>"><i class="fa fa-youtube"></i></a>
+                                                    <li><a
+                                                            href="<?= isset($socmed->youtube) ? $socmed->youtube : '#' ?>"><i
+                                                                class="fa fa-youtube"></i></a>
                                                     </li>
-                                                    <li><a href="<?= isset($socmed->gmail) ? $socmed->url_wa : '#' ?>"><i class="fa fa-google-plus"></i></a>
+                                                    <li><a href="<?= isset($socmed->gmail) ? $socmed->url_wa : '#' ?>"><i
+                                                                class="fa fa-google-plus"></i></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -341,7 +309,7 @@ Author: Pemuda Solusi Teknologi
                                         <img src="<?= base_url() ?>/upload/sales/testimonial/<?= $testi['image'] ?>"
                                             class="img-responsive" alt="section3_t1__img" />
                                         <?php } else { ?>
-                                            <img src="<?= base_url() ?>/assets/template/assets/images/testimonialsimages/testi_img1.png"
+                                        <img src="<?= base_url() ?>/assets/template/assets/images/testimonialsimages/testi_img1.png"
                                             class="img-responsive" alt="section3_t1__img" />
                                         <?php } ?>
                                     </div>
@@ -393,16 +361,16 @@ Author: Pemuda Solusi Teknologi
     <div class="modal fade" id="modal-notif" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <img class="modal-content"
-                src="<?= base_url() ?>/upload/sales/notification/<?= $notifications['image'] ?>">
+            <img class="modal-content" src="<?= base_url() ?>/upload/sales/notification/<?= $notifications['image'] ?>">
             <div class="row text-center" style="margin-top:10px;">
                 <button id="other-price" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
     <?php endif; ?>
-    
+
     <?= View('/web/layouts/footer') ?>
+    <?= View('/web/modal_products') ?>
 </body>
 
 </html>
