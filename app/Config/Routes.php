@@ -33,7 +33,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->post('/send_question', 'Home::send_message');
 $routes->get('/all-products','Home::all_products');
-
+$routes->get('/sub-products/(:num)','Home::get_sub_products/$1');
 $routes->add('login', 'LoginController::login');
 $routes->get('logout', 'LoginController::logout');
 $routes->post('proses_login', 'LoginController::prosesLogin');

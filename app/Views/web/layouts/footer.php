@@ -24,6 +24,22 @@
 
 $(document).ready(function() {
     $('#modal-notif').modal('show');
+
+    $('.show-product').click(function() {
+        $('.table-sub-product').empty();
+        $.ajax({
+            'url':'<?= base_url() ?>/sub-products/'+$(this).data('product_id'),
+            'method':'GET',
+            success:function(response) {
+                if (response.success) {
+                    $.each(response.data, function(dt, val){ 
+                        $('.table-sub-product').append('<tr> <td>'+val.sub_product_name+'</td> <td>Rp '+val.sub_product_price+'</td> </tr>');
+                    });
+                }
+            }
+        });
+        $('#modal-sub-product').modal('show');
+    });
 });
 
 //Side Menu js

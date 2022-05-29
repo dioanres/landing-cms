@@ -76,58 +76,25 @@ Author: Pemuda Solusi Teknologi
                             <div class="tab-content">
                                 <div id="all_items" class="tab-pane fade in active">
                                     <div class="row">
-
+                                        <?php if(!empty($products)): foreach($products as $product): ?>
                                         <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <a class="btn" data-toggle="modal" data-target="#exampleModal">
+                                            <a class="btn show-product" data-product_id="<?= $product['id'] ?>">
                                                 <div class="tab_image_wrapper">
                                                     <div class="tab_image">
                                                         <figure>
-                                                            <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/portfolio-1.png"
+                                                            <img src="<?= base_url() ?>/upload/sales/product/<?= $product['image'] ?>"
                                                                 class="img-responsive" alt="team1_img" />
                                                         </figure>
                                                     </div>
                                                     <div class="tab_image_text">
                                                         <div class="project_title">
-                                                            <h4>Yaris GR</h4>
+                                                            <h4><?= $product['name'] ?></h4>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <a class="btn" data-toggle="modal" data-target="#exampleModal">
-                                                <div class="tab_image_wrapper">
-                                                    <div class="tab_image">
-                                                        <figure>
-                                                            <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/rush.png"
-                                                                class="img-responsive" alt="team1_img" />
-                                                        </figure>
-                                                    </div>
-                                                    <div class="tab_image_text">
-                                                        <div class="project_title">
-                                                            <h4>RUSH</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                            <a class="btn" data-toggle="modal" data-target="#exampleModal">
-                                                <div class="tab_image_wrapper">
-                                                    <div class="tab_image">
-                                                        <figure>
-                                                            <img src="<?= base_url() ?>/assets/template/assets/images/portfolio-images/raize.png"
-                                                                class="img-responsive" alt="team1_img" />
-                                                        </figure>
-                                                    </div>
-                                                    <div class="tab_image_text">
-                                                        <div class="project_title">
-                                                            <h4>RAIZE</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                        <?php endforeach; endif; ?>
                                     </div>
                                 </div>
                             </div>

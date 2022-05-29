@@ -4,6 +4,7 @@ use App\Models\BannerModel;
 use App\Models\ProductModel;
 use App\Models\ProfileModel;
 use App\Models\CustomerModel;
+use App\Models\SubProductModel;
 use App\Models\TestimonialModel;
 use App\Models\NotificationModel;
 
@@ -17,6 +18,7 @@ class Home extends BaseController
 		$this->bannerModel	= new BannerModel();
 		$this->productModel	= new ProductModel();
 		$this->testimoniModel = new TestimonialModel();
+		$this->subProductModel = new SubProductModel();
 	}
 	
 	public function index()
@@ -56,6 +58,17 @@ class Home extends BaseController
 		$data['socmed'] = json_decode($data['profile']['meta_socmed']);
 
 		return view('web/all_products', $data);
+	}
+
+	public function get_sub_products($product_id)
+	{
+		$data = $this->subProductModel->where('product_id', $product_id)->findAll();
+		$response = [
+			'success' => true,
+			'data' => $data,
+		];
+		
+		return $this->response->setJSON($response);
 	}
 
 	//--------------------------------------------------------------------
