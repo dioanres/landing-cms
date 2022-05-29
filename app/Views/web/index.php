@@ -13,6 +13,7 @@ Author: Pemuda Solusi Teknologi
 
 <body>
     <?= View('/web/layouts/menu') ?>
+    <?= View('/web/modal_products') ?>
     <!--Slider area start here-->
     <section data-scroll='0' class="slider-area" id="0">
         <div class="container-fluid">
@@ -370,7 +371,7 @@ Author: Pemuda Solusi Teknologi
     <?php endif; ?>
 
     <?= View('/web/layouts/footer') ?>
-    <?= View('/web/modal_products') ?>
+    
 </body>
 
 </html>
