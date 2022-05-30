@@ -72,7 +72,8 @@ CKEDITOR.replace('.ckeditor', {
 
 // Add the following code if you want the name of the file appear on select
 $(".custom-file-input").on("change", function() {
-    $('.show-img-ready').remove();
+    //$('.show-img-ready').remove();
+    $(this).parent().parent().find('.show-img-ready').remove();
     var fileName = $(this).val().split("\\").pop();
     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
 });

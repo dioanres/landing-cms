@@ -1,8 +1,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="Toyota, Mobile, Mobil, Car, Astra, Mobilbaru">
-    <meta name="author" content="">
+    <meta name="description" content="Membeli Mobil baru, dengan harga murah, dan banyak diskon, Toyota, Mobile, Mobil, Car, Astra, Mobilbaru, Marketing Mobil Toyota">
+    <meta name="author" content="Toyota">
+    <meta name="keyword" content="Mobil Toyota Baru, Mobil Bekas, Promo Mobil Murah, Diskon Besar Mobil Baru, Mobil Toyota, Mobil Honda, Hyundai Creta, Avanza, Veloz, Rocky, Raize">
 
     <title> Toyota </title>
     <!-- Place favicon.ico in the root directory -->

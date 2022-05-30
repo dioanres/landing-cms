@@ -2,7 +2,7 @@
     <!-- Custom fonts for this template-->
     <link href="<?= base_url() ?>/assets/sb_admin2/vendor1/fontawesome-free/css/all.min.css" rel="stylesheet"
         type="text/css">
-        <link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/assets/template/icons/4.jpeg">
         <!-- <link rel="icon" type="image/png" href="{{ asset('assets/img/logopab.png') }}"> -->
         <!-- <link rel="icon" type="image/png" href="<?= base_url() ?>/assets/images/login/icons/favicon.ico" /> -->
     <link
