@@ -34,6 +34,7 @@
     <link href="<?= base_url() ?>/assets/template/assets/css/portfolio_grid_style_6.css" rel="stylesheet">
 
     <style>
+    
     .wa-show {
         position: fixed;
         bottom: 85px;
@@ -130,6 +131,9 @@
         left: 50%;
         transform: translate(-50%, -75%);
         width:100%;
+    }
+    .col-xs-3 {
+        float:unset !important;
     }
         /* .modal {
         display: flex;

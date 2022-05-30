@@ -53,6 +53,15 @@ $routes->group('admin',['filter' => 'auth'], function($routes)
 		$routes->get('banner/edit/(:num)','Sales\BannerController::edit/$1');
 		$routes->get('banner/delete/(:num)','Sales\BannerController::delete/$1');
 
+		//group
+		$routes->get('product_group','Sales\ProductGroupController');
+		$routes->add('product_group/add','Sales\ProductGroupController::add');
+		$routes->post('product_group/save','Sales\ProductGroupController::save');
+		$routes->post('product_group/update','Sales\ProductGroupController::update');
+		$routes->get('product_group/edit/(:num)','Sales\ProductGroupController::edit/$1');
+		$routes->get('product_group/delete/(:num)','Sales\ProductGroupController::delete/$1');
+
+
 		//prooduct
 		$routes->get('product','Sales\ProductController');
 		$routes->add('product/add','Sales\ProductController::add');
