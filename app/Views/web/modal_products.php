@@ -24,7 +24,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a href="<?= $socmed->url_wa ?>" type="button" class="btn btn-primary">Info Detail</a>
+                <a id="link-detail" href="#" type="button" class="btn btn-primary">Info Detail</a>
             </div>
         </div>
     </div>
