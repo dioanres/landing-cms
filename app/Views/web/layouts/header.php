@@ -6,7 +6,7 @@
 
     <title> Toyota </title>
     <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/assets/template/assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/assets/template/icons/4.jpeg">
 
     <!-- Bootstrap core CSS -->
 
