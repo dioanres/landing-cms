@@ -51,7 +51,7 @@
                                                     <tr>
                                                         <th width="20%">Name</th>
                                                         <th>Image</th>
-                                                        <th>Description</th>
+                                                        <th>Text Whatsapp</th>
                                                         <th>Action</th>
                                                     </tr>
                                                 </thead>

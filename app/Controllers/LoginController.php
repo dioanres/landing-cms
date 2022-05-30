@@ -1,9 +1,10 @@
 <?php namespace App\Controllers;
 
-use App\Models\UserModel;
-use App\Models\ActivityLoginModel;
-use FlashData;
 use Session;
+use FlashData;
+use App\Models\UserModel;
+use App\Models\ProfileModel;
+use App\Models\ActivityLoginModel;
 
 class LoginController extends BaseController
 {
@@ -13,6 +14,7 @@ class LoginController extends BaseController
     {
         $this->model = new UserModel();
         $this->activityLoginModel = new ActivityLoginModel();
+        $this->profileModel = new ProfileModel();
         $this->validation =  \Config\Services::validation();
         
     }
@@ -35,16 +37,18 @@ class LoginController extends BaseController
             'email' => $this->request->getPost('email'),
             'password' => $this->request->getPost('password'),
         ];
-        //dd($this->validation,$validation);
+        
         if($this->validation->run($data, 'login')) {
             $user = $this->model->findByEmail($data['email']);
-            //dd($user);
+            
             if($user) {
                 if($user && $this->checkPassword($user,$data['password'])){
                     $dataLogin = [
                         'isLogin' => true,
                         'user' => $user,
+                        'profile' => $this->profileModel->first(),
                     ];
+                    
                     $user['last_login'] = date('Y-m-d h:i:s');
                     $this->model->update($user['id'],$user);
                     $dataActivity = [

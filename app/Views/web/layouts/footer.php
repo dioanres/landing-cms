@@ -32,6 +32,7 @@ $(document).ready(function() {
             'method':'GET',
             success:function(response) {
                 if (response.success) {
+                    $('#product-title').text(response.product.name);
                     $.each(response.data, function(dt, val){
                         let price = parseFloat(val.sub_product_price); 
 

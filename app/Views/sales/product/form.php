@@ -30,7 +30,7 @@
 </div>
 <div class="form-group row">
     <div class="col-sm-6 mb-3 mb-sm-0">
-        <textarea class="form-control ckeditor" name="desc" rows="5"><?= $data ? $data['desc'] : '' ?></textarea>
+        <textarea class="form-control" name="desc" placeholder="Text Whatsapp" rows="5"><?= $data ? $data['desc'] : '' ?></textarea>
         <?php if (isset($errors['desc'])) {
              echo '<span class="text-red">'.$errors['desc'].'</span>';
         } ?>

@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h6 style="margin-bottom:7px;" id="exampleModalLabel"><b>YARIS</b></h6>
+                <h6 style="margin-bottom:7px;" id="exampleModalLabel"><b><span id="product-title"></span></b></h6>
                 <table class="table table-bordered">
                     <thead style="font-weight:600;">
                         <tr>
@@ -24,7 +24,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Info Detail</button>
+                <a href="<?= $socmed->url_wa ?>" type="button" class="btn btn-primary">Info Detail</a>
             </div>
         </div>
     </div>

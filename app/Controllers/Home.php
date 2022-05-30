@@ -63,9 +63,11 @@ class Home extends BaseController
 	public function get_sub_products($product_id)
 	{
 		$data = $this->subProductModel->where('product_id', $product_id)->findAll();
+		$product = $this->productModel->where('id', $product_id)->first();
 		$response = [
 			'success' => true,
 			'data' => $data,
+			'product' => $product,
 		];
 		
 		return $this->response->setJSON($response);
