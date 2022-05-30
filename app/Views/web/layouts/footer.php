@@ -32,8 +32,10 @@ $(document).ready(function() {
             'method':'GET',
             success:function(response) {
                 if (response.success) {
-                    $.each(response.data, function(dt, val){ 
-                        $('.table-sub-product').append('<tr> <td>'+val.sub_product_name+'</td> <td>Rp '+val.sub_product_price+'</td> </tr>');
+                    $.each(response.data, function(dt, val){
+                        let price = parseFloat(val.sub_product_price); 
+
+                        $('.table-sub-product').append('<tr> <td>'+val.sub_product_name+'</td> <td>Rp '+price.toLocaleString('en-US')+'</td> </tr>');
                     });
                 }
             }

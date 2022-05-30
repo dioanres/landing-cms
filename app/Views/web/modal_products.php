@@ -11,7 +11,7 @@
             </div>
             <div class="modal-body">
                 <h6 style="margin-bottom:7px;" id="exampleModalLabel"><b>YARIS</b></h6>
-                <table class="table">
+                <table class="table table-bordered">
                     <thead style="font-weight:600;">
                         <tr>
                             <td>Type</td>
