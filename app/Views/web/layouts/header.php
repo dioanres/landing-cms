@@ -1,9 +1,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="Membeli Mobil baru, dengan harga murah, dan banyak diskon, Toyota, Mobile, Mobil, Car, Astra, Mobilbaru, Marketing Mobil Toyota">
+    <meta name="title" content="Toyota Depok Jakarta Kembangan Tangerang Ciledug">
+    <meta name="description" content="Toyota Cibubur, Dealer Resmi Tunas Toyota Jakarta Membeli Mobil baru, dengan harga murah, dan banyak diskon, Toyota, Mobile, Mobil, Car, Astra, Mobilbaru, Marketing Mobil Toyota">
     <meta name="author" content="Toyota">
-    <meta name="keyword" content="Mobil Toyota Baru, Mobil Bekas, Promo Mobil Murah, Diskon Besar Mobil Baru, Mobil Toyota, Mobil Honda, Hyundai Creta, Avanza, Veloz, Rocky, Raize">
+    <meta name="keywords" content="toyota, cibubur, toyota cibubur, tunas toyota, toyota depok, toyota jakarta, setiajaya toyota cibubur depok, toyota setiajaya, promo toyota, dealer toyota terdekat, toyota kembangan, Mobil Toyota Baru, Mobil Bekas, Promo Mobil Murah, Diskon Besar Mobil Baru, Mobil Toyota, Mobil Honda, Hyundai Creta, Avanza, Veloz, Rocky, Raize">
+    <meta name="robots" content="index, follow">
 
     <title> Toyota </title>
     <!-- Place favicon.ico in the root directory -->
