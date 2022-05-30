@@ -1,6 +1,6 @@
 <?php namespace App\Controllers\Sales;
 
-use \App\Models\customerModel;
+use \App\Models\CustomerModel;
 use App\Controllers\BaseController;
 
 class CustomerController extends BaseController
