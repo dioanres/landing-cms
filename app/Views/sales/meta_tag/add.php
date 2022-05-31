@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?= View('layout/header_top') ?>
+
 <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -22,9 +23,9 @@
                                 <h6 class="m-0 font-weight-bold text-primary"><?= $title ?></h6>
                             </div>
                             <div class="card-body">
-                                <form class="user" method="post" action="/admin/visi/update"
+                                <form class="user" method="post" action="/admin/sales/meta_tag/save"
                                     enctype="multipart/form-data">
-                                    <?= View('visi/form') ?>
+                                    <?= View('sales/meta_tag/form') ?>
                                 </form>
                             </div>
                         </div>

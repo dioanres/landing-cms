@@ -78,12 +78,11 @@
              <span>Notifications</span></a>
      </li>
 
-     <!-- <li class="nav-item">
-  <a class="nav-link" href="<?= route_to('admin/setting') ?>">
-    <i class="fas fa-fw fa-folder"></i>
-    <span>Setting</span></a>
-</li> -->
-
+     <li class="nav-item">
+         <a class="nav-link" href="<?= route_to('admin/sales/meta_tag') ?>">
+             <i class="fas fa-fw fa-folder"></i>
+             <span>Meta Tags</span></a>
+     </li>
      <!-- Divider -->
      <hr class="sidebar-divider d-none d-md-block">
 

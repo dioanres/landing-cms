@@ -1,15 +1,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
-    <meta name="title" content="Toyota Depok Jakarta Kembangan Tangerang Ciledug">
-    <meta name="description" content="Toyota Cibubur, Dealer Resmi Tunas Toyota Jakarta Membeli Mobil baru, dengan harga murah, dan banyak diskon, Toyota, Mobile, Mobil, Car, Astra, Mobilbaru, Marketing Mobil Toyota">
-    <meta name="author" content="Toyota">
-    <meta name="keywords" content="toyota, cibubur, toyota cibubur, tunas toyota, toyota depok, toyota jakarta, setiajaya toyota cibubur depok, toyota setiajaya, promo toyota, dealer toyota terdekat, toyota kembangan, Mobil Toyota Baru, Mobil Bekas, Promo Mobil Murah, Diskon Besar Mobil Baru, Mobil Toyota, Mobil Honda, Hyundai Creta, Avanza, Veloz, Rocky, Raize">
+    <meta name="title" content="<?= isset($meta_tag) ? $meta_tag['title'] : '' ?>">
+    <meta name="description" content="="<?= isset($meta_tag) ? $meta_tag['description'] : '' ?>">
+    <meta name="author" content="="<?= isset($meta_tag) ? $meta_tag['author'] : '' ?>">
+    <meta name="keywords" content="="<?= isset($meta_tag) ? $meta_tag['keywords'] : '' ?>">
     <meta name="robots" content="index, follow">
 
     <title> Toyota </title>
     <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/assets/template/icons/4.jpeg">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/upload/sales/meta_tag/<?= isset($meta_tag) ? $meta_tag['icon'] : '' ?>">
 
     <!-- Bootstrap core CSS -->
 

@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 
 use App\Models\BannerModel;
+use App\Models\MetaTagModel;
 use App\Models\ProductModel;
 use App\Models\ProfileModel;
 use App\Models\CustomerModel;
@@ -21,6 +22,7 @@ class Home extends BaseController
 		$this->testimoniModel = new TestimonialModel();
 		$this->subProductModel = new SubProductModel();
 		$this->productGroupModel = new ProductGroupModel();
+		$this->metaTagModel	= new MetaTagModel();
 	}
 	
 	public function index()
@@ -28,9 +30,6 @@ class Home extends BaseController
 		$db      = \Config\Database::connect();
 		$query = $db->query("select a.*, b.name as group_name from sales_products a
 		left join sales_product_groups b on b.id = a.product_group_id");
-		// $products = $db->table('sales_products');
-		// $products->select('*');
-		// $products->join('sales_product_groups', 'sales_products.product_group_id = sales_product_groups.id');
 		
 		$data = [
 			'notifications' => $this->notifModel->first(),
@@ -40,6 +39,7 @@ class Home extends BaseController
 			'products'	=> $query->getResult('array'),
 			'testimonials'	=> $this->testimoniModel->findAll(),
 			'groups'	=> 	$this->productGroupModel->findAll(),
+			'meta_tag' => $this->metaTagModel->first(),
 		];
 
 		$data['socmed'] = json_decode($data['profile']['meta_socmed']);

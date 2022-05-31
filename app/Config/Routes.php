@@ -78,6 +78,14 @@ $routes->group('admin',['filter' => 'auth'], function($routes)
 		$routes->get('customer/edit/(:num)','Sales\CustomerController::edit/$1');
 		$routes->get('customer/delete/(:num)','Sales\CustomerController::delete/$1');
 
+		//meta tag
+		$routes->get('meta_tag','Sales\MetaTagController');
+		$routes->add('meta_tag/add','Sales\MetaTagController::add');
+		$routes->post('meta_tag/save','Sales\MetaTagController::save');
+		$routes->post('meta_tag/update','Sales\MetaTagController::update');
+		$routes->get('meta_tag/edit/(:num)','Sales\MetaTagController::edit/$1');
+		$routes->get('meta_tag/delete/(:num)','Sales\MetaTagController::delete/$1');
+
 		//testimoni
 		$routes->get('testimonial','Sales\TestimoniController');
 		$routes->add('testimonial/add','Sales\TestimoniController::add');

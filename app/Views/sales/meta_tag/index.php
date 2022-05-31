@@ -32,33 +32,51 @@
 
                         <!-- DataTales Example -->
                         <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <div style="float:right">
+                                    <?php if (count($data) < 1) : ?>
+                                    <a href="<?= route_to('admin/sales/meta_tag/add') ?>"
+                                        class="btn btn-primary btn-circle">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                    <?php endif; ?>
+                                </div>
+
+                            </div>
+
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Meta Icon</th>
-                                                <th>Company Profile</th>
-                                                <th>Video</th>
+                                                <th>Icon</th>
+                                                <th>Title</th>
+                                                <th>Author</th>
+                                                <th>Description</th>
+                                                <th>Keywords</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <?php foreach ($data as $user) : ?>
                                             <tr>
-                                                <td><img src="<?php echo base_url('upload/setting').'/'.$user['meta_icon'] ?>" widht="200px" height="200px" /></td>
-                                                <td><iframe src="<?php echo base_url('upload/setting').'/'.$user['doc_cp'] ?>" widht="150px" height="300px" ></iframe>
-                                                <br>
-                                                <a href="<?php echo base_url('upload/setting').'/'.$user['doc_cp'] ?>">Download</a>
-                                                </td>
-                                                <td><iframe src="<?php echo base_url('upload/setting').'/'.$user['video'] ?>" widht="200px" height="200px" ></iframe></td>
+
+                                                <td><img src="<?php echo base_url('upload/sales/meta_tag').'/'.$user['icon'] ?>"
+                                                        widht="200px" height="200px" /></td>
+                                                <td><?= $user['title'] ?></td>
+                                                <td><?= $user['author'] ?></td>
+                                                <td><?= $user['description'] ?></td>
+                                                <td><?= $user['keywords'] ?></td>
                                                 <td>
-                                                    <a href="<?= base_url('admin/setting/edit').'/'.$user['id'] ?>"
+                                                    <a href="<?= base_url('admin/sales/meta_tag/edit').'/'.$user['id'] ?>"
                                                         class="btn btn-primary btn-sm">
+
                                                         Edit
                                                     </a>
-                                                    <!-- <button type="button" class="btn btn-primary btn-sm">Delete</button> -->
+                                                    <a href="<?= base_url('admin/sales/meta_tag/delete').'/'.$user['id'] ?>"
+                                                        type="button" class="btn btn-danger btn-sm">Delete</a>
                                                 </td>
+
                                             </tr>
                                             <?php endforeach ?>
                                         </tbody>
