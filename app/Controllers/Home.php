@@ -27,7 +27,7 @@ class Home extends BaseController
 	{	 
 		$db      = \Config\Database::connect();
 		$query = $db->query("select a.*, b.name as group_name from sales_products a
-		join sales_product_groups b on b.id = a.product_group_id");
+		left join sales_product_groups b on b.id = a.product_group_id");
 		// $products = $db->table('sales_products');
 		// $products->select('*');
 		// $products->join('sales_product_groups', 'sales_products.product_group_id = sales_product_groups.id');
