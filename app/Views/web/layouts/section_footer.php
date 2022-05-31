@@ -26,10 +26,12 @@
                                         alt="ic-loc">
                                 </div>
                                 <div class="footer_icon_text">
-                                    <div class="footer_icon_title">Phone | Email</div>
+                                    <div class="footer_icon_title">Contact | Social Media</div>
                                     <hr class="footer_green_hr">
                                     <p><b>Phone</b> :<?= isset($profile['phone']) ? $profile['phone'] : '-' ?><br>
                                         <b>Whatsapp</b> : <a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#'  ?>"><?= isset($socmed->whatsapp) ? $socmed->whatsapp : '-'  ?></a><br>
+                                        <b>Instagram</b> : <a href="http://instagram.com/_u/<?= isset($socmed->instagram) ? $socmed->instagram : '#' ?>/"><?= isset($socmed->instagram) ? $socmed->instagram : '-'  ?></a><br>
+                                        <b>Youtube</b> : <a href="<?= isset($socmed->youtube) ? $socmed->youtube : '-'  ?>">Click</a><br>
                                         <b>E-Mail</b> : <a href="#"><?= isset($socmed->email) ? $socmed->email : '-'  ?></a>
                                     </p>
                                 </div>

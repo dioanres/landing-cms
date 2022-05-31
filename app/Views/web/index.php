@@ -217,7 +217,7 @@ Author: Pemuda Solusi Teknologi
                                                                 class="fa fa-whatsapp"></i></a>
                                                     </li>
                                                     <li><a
-                                                            href="<?= isset($socmed->instagram) ? $socmed->instagram : '#' ?>"><i
+                                                            href="http://instagram.com/_u/<?= isset($socmed->instagram) ? $socmed->instagram : '#' ?>/"><i
                                                                 class="fa fa-instagram"></i></a>
                                                     </li>
                                                     <li><a
