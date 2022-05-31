@@ -90,6 +90,17 @@
     <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="input-group mb-3">
             <div class="input-group-prepend">
+                <span class="input-group-text" id=""><i class="fas fa-at"></i></span>
+            </div>
+            <input type="text" name="email" value="<?= isset($socmed->email) ? $socmed->email : '' ?>" class="form-control" placeholder="Email" aria-label=""
+                aria-describedby="basic-addon1">
+        </div>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1"><i class="fab fa-whatsapp"></i></span>
             </div>
             <input type="text" name="whatsapp" value="<?= isset($socmed->whatsapp) ? $socmed->whatsapp : '' ?>" class="form-control" placeholder="No Whatsapp" aria-label="Username"

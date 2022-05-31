@@ -36,6 +36,7 @@ class ProfileController extends BaseController
             'address' => $this->request->getPost('address'),
             'phone' => $this->request->getPost('phone'),
             'logo' => $this->request->getPost('logo'),
+            'email' => $this->request->getPost('email'),
             'meta_socmed' => $this->request->getPost('meta_socmed'),
         ];
 
@@ -81,6 +82,7 @@ class ProfileController extends BaseController
                     'whatsapp' => $this->request->getPost('whatsapp'),
                     'instagram' => $this->request->getPost('instagram'),
                     'youtube' => $this->request->getPost('youtube'),
+                    'email' => $this->request->getPost('email'),
                     'text_whatsapp' => $this->request->getPost('text_whatsapp'),
                     'url_wa'    => 'https://wa.me/'.$this->request->getPost('whatsapp').
                         '?text='.urlencode($this->request->getPost('text_whatsapp')),
