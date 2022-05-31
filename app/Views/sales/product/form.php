@@ -5,7 +5,7 @@
         <select class="form-control" name="product_group_id">
             <option> -- Pilih Group --</option>
             <?php foreach($groups as $val): ?>
-                <option <?= $data['product_group_id'] == $val['id'] ? 'selected' : '' ?> value="<?= $val['id'] ?>"> <?= $val['name'] ?> </option>
+                <option <?= $data && $data['product_group_id'] == $val['id'] ? 'selected' : '' ?> value="<?= $val['id'] ?>"> <?= $val['name'] ?> </option>
             <?php endforeach; ?>
         </select>
         <?php if (isset($errors['name'])) {
