@@ -10,14 +10,18 @@ class ProductModel extends BaseModel
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['name', 'desc','image', 'price', 'meta','title'];
+    protected $allowedFields = ['name', 'desc','image', 'price', 'meta','title', 'product_group_id'];
     protected $useTimestamps = true;
 
     protected $validationRules    = [
+        'product_group_id' => 'required',
         'name'  => 'required',
         'image' => 'required|is_image[image]|max_size[image, 2048]',
     ];
     protected $validationMessages = [
+        'product_group_id'  => [
+            'required' => 'Produk Group Wajib di isi.'
+        ],
         'name'  => [
             'required' => 'Nama Wajib di isi.'
         ],

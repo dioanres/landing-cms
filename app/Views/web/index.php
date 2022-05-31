@@ -70,14 +70,25 @@ Author: Pemuda Solusi Teknologi
                 </div>
             </div>
             <div class="container">
+                <div class="portfolio-filter clearfix text-center">
+                    <ul class="list-inline" id="filter">
+                        <li><a class="active" data-group="all">All</a></li>
+                        <?php if($groups): foreach($groups as $key => $val): ?>
+                        <li><a data-group="<?= $val['name'] ?>"><?= $val['name'] ?></a></li>
+                        <?php endforeach; endif; ?>
+                    </ul>
+                </div>
                 <div class="row">
+
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                         <div class="portfolio_nav_tabs">
                             <div class="tab-content">
                                 <div id="all_items" class="tab-pane fade in active">
                                     <div class="row">
+                                        <div id="gridWrapper">
                                         <?php if(!empty($products)): foreach($products as $product): ?>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6 portfolio-wrapper"
+                                            data-groups='["all", "<?= $product['group_name'] ?>"]'>
                                             <a class="btn show-product" data-product_id="<?= $product['id'] ?>">
                                                 <div class="tab_image_wrapper">
                                                     <div class="tab_image">
@@ -95,6 +106,9 @@ Author: Pemuda Solusi Teknologi
                                             </a>
                                         </div>
                                         <?php endforeach; endif; ?>
+
+                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -338,7 +352,7 @@ Author: Pemuda Solusi Teknologi
     <?php endif; ?>
 
     <?= View('/web/layouts/footer') ?>
-    
+
 </body>
 
 </html>

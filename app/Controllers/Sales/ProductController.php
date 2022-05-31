@@ -2,6 +2,7 @@
 
 use \App\Models\ProductModel;
 use App\Models\SubProductModel;
+use App\Models\ProductGroupModel;
 use App\Controllers\BaseController;
 
 class ProductController extends BaseController
@@ -9,6 +10,7 @@ class ProductController extends BaseController
     public function __construct()
     {
         $this->model = new ProductModel(); 
+        $this->groupModel = new ProductGroupModel();
         $this->sub_product = new SubProductModel();
     }
 
@@ -22,10 +24,13 @@ class ProductController extends BaseController
 
     public function add()
     {   
+        $groups = $this->groupModel->findAll();
+
         return view('sales/product/add',
             ['data' => null,
             'sub_products' => [],
-            'title' => 'Add Product'
+            'title' => 'Add Product',
+            'groups' => $groups,
         ]);
     }
 
@@ -37,6 +42,7 @@ class ProductController extends BaseController
             'image' => $this->request->getPost('image'),
             'price' => $this->request->getPost('price'),
             'meta' => $this->request->getPost('meta'),
+            'product_group_id' => $this->request->getPost('product_group_id'),
         ];
 
         $image = $this->request->getFile('image');
@@ -73,10 +79,12 @@ class ProductController extends BaseController
     {
         $data = $this->model->find($id);
         $sub_products = $this->sub_product->where('product_id', $id)->findAll();
-        
+        $groups = $this->groupModel->findAll();
+
         return view('sales/product/edit',['data' => $data, 
             'sub_products' => $sub_products, 
-            'title' => 'Edit Product'
+            'title' => 'Edit Product',
+            'groups' => $groups
         ]);
     }
 
@@ -91,6 +99,7 @@ class ProductController extends BaseController
                     'image' => $this->request->getPost('image'),
                     'price' => (double) $this->request->getPost('price'),
                     'meta' => $this->request->getPost('meta'),
+                    'product_group_id' => $this->request->getPost('product_group_id'),
                 ];
                 //dd($this->request->getPost());
                 if($this->request->getPost('image_existing')){

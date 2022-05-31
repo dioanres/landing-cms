@@ -2,6 +2,19 @@
 <?php $errors = session()->getFlashdata('errors'); ?>
 <div class="form-group row">
     <div class="col-sm-6 mb-3 mb-sm-0">
+        <select class="form-control" name="product_group_id">
+            <option> -- Pilih Group --</option>
+            <?php foreach($groups as $val): ?>
+                <option <?= $data['product_group_id'] == $val['id'] ? 'selected' : '' ?> value="<?= $val['id'] ?>"> <?= $val['name'] ?> </option>
+            <?php endforeach; ?>
+        </select>
+        <?php if (isset($errors['name'])) {
+             echo '<span class="text-red">'.$errors['name'].'</span>';
+        } ?>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
         <input type="text" class="form-control" placeholder="Nama Produk" name="name"
             value="<?= $data ? $data['name'] : '' ?>">
         <?php if (isset($errors['name'])) {

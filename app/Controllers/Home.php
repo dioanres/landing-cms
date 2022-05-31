@@ -7,6 +7,7 @@ use App\Models\CustomerModel;
 use App\Models\SubProductModel;
 use App\Models\TestimonialModel;
 use App\Models\NotificationModel;
+use App\Models\ProductGroupModel;
 
 class Home extends BaseController
 {
@@ -19,17 +20,26 @@ class Home extends BaseController
 		$this->productModel	= new ProductModel();
 		$this->testimoniModel = new TestimonialModel();
 		$this->subProductModel = new SubProductModel();
+		$this->productGroupModel = new ProductGroupModel();
 	}
 	
 	public function index()
 	{	 
+		$db      = \Config\Database::connect();
+		$query = $db->query("select a.*, b.name as group_name from sales_products a
+		join sales_product_groups b on b.id = a.product_group_id");
+		// $products = $db->table('sales_products');
+		// $products->select('*');
+		// $products->join('sales_product_groups', 'sales_products.product_group_id = sales_product_groups.id');
+		
 		$data = [
 			'notifications' => $this->notifModel->first(),
 			'profile'	=> $this->profileModel->first(),
 			'customers'	=> $this->customerModel->findAll(),
 			'banners'	=> $this->bannerModel->findAll(),
-			'products'	=> $this->productModel->findAll(),
-			'testimonials'	=> $this->testimoniModel->findAll(),	
+			'products'	=> $query->getResult('array'),
+			'testimonials'	=> $this->testimoniModel->findAll(),
+			'groups'	=> 	$this->productGroupModel->findAll(),
 		];
 
 		$data['socmed'] = json_decode($data['profile']['meta_socmed']);

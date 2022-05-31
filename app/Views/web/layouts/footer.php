@@ -16,9 +16,7 @@
  
  <!-- Custom js -->
  <script src="<?= base_url() ?>/assets/template/assets/js/custom.js"></script>
-
- 
-
+ <script src="<?= base_url() ?>/assets/template/assets/js/portfolio.js"></script>
  <script>
 //notif modal
 
@@ -34,7 +32,7 @@ $(document).ready(function() {
                 if (response.success) {
                     $('#product-title').text(response.product.name);
                     let url_wa = encodeURI(response.product.desc);
-                    
+
                     $('#link-detail').attr('href', 'https://wa.me/<?= $socmed->whatsapp ?>?text='+url_wa+' ');
                     $.each(response.data, function(dt, val){
                         let price = parseFloat(val.sub_product_price); 
