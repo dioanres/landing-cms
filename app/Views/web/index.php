@@ -87,7 +87,7 @@ Author: Pemuda Solusi Teknologi
                                     <div class="row">
                                         <div id="gridWrapper">
                                         <?php if(!empty($products)): foreach($products as $product): ?>
-                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6 portfolio-wrapper"
+                                        <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 portfolio-wrapper"
                                             data-groups='["all", "<?= $product['group_name'] ?>"]'>
                                             <a class="btn show-product" data-product_id="<?= $product['id'] ?>">
                                                 <div class="tab_image_wrapper">
