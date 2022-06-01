@@ -56,6 +56,10 @@
         border-radius: 50%;
     }
 
+    .label-product {
+        white-space: initial;
+    }
+
     .img-sales {
         height: 350px;
         width: 350px;

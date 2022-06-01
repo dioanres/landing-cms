@@ -98,7 +98,7 @@ Author: Pemuda Solusi Teknologi
                                                         </figure>
                                                     </div>
                                                     <div class="tab_image_text">
-                                                        <div class="project_title">
+                                                        <div class="project_title label-product">
                                                             <h4><?= $product['name'] ?></h4>
                                                         </div>
                                                     </div>
