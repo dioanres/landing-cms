@@ -42,7 +42,7 @@ class Home extends BaseController
 			'meta_tag' => $this->metaTagModel->first(),
 		];
 
-		$data['socmed'] = json_decode($data['profile']['meta_socmed']);
+		$data['socmed'] = isset($data['profile']['meta_socmed']) ? json_decode($data['profile']['meta_socmed']) : null;
 		
 		return view('web/index', $data);
 	}

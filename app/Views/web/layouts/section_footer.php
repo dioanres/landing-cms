@@ -13,7 +13,7 @@
                                 <div class="footer_icon_text">
                                     <div class="footer_icon_title">Address</div>
                                     <hr class="footer_yellow_hr">
-                                    <p><?= $profile['address'] ?></p>
+                                    <p><?= isset($profile) ? $profile['address'] : '' ?></p>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-xs-12 col-sm-6">
                         <div class="footer_copyright">
-                            <p>© Copyright 2022 By Arif Toyota - all right reserved</p>
+                            <p>© Copyright 2022 By MQL Digital - all right reserved</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">

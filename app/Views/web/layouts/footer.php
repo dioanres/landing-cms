@@ -33,7 +33,7 @@ $(document).ready(function() {
                     $('#product-title').text(response.product.name);
                     let url_wa = encodeURI(response.product.desc);
 
-                    $('#link-detail').attr('href', 'https://wa.me/<?= $socmed->whatsapp ?>?text='+url_wa+' ');
+                    $('#link-detail').attr('href', 'https://wa.me/<?= isset($socmed) ? $socmed->whatsapp : '' ?>?text='+url_wa+' ');
                     $.each(response.data, function(dt, val){
                         let price = parseFloat(val.sub_product_price); 
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- 
 Template Name: A-Future HTML
@@ -36,7 +37,20 @@ Author: Pemuda Solusi Teknologi
                                     </div>
                                 </div>
                             </div>
-                            <?php endforeach; endif; ?>
+                            <?php endforeach; else: ?> 
+                                <div class="item active">
+                                <img src="<?= base_url() ?>/assets/template/assets/images/slide2.jpg" alt="" />
+                                <div class="carousel-caption one">
+                                    <div class="slider_content">
+
+                                        <ul>
+                                            <li class="animated bounceInLeft"><a href="#5">Shop Now</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endif; ?>
                         </div>
                         <a class="carousel-control-prev carousel-control" href="#carouselExampleIndicators"
                             role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
@@ -61,9 +75,6 @@ Author: Pemuda Solusi Teknologi
                                 <div class="section_heading">
                                     <h2><i class="fa fa-square"></i> Top Products</h2>
                                 </div>
-                                <!-- <div class="section_content">
-                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum aucto</p>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -191,14 +202,6 @@ Author: Pemuda Solusi Teknologi
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 col-lg-offset-3">
-                        <!-- <div class="section5_text_wrapper">
-                        <div class="section5_text_heading">
-                            <h2>Hubungi :</h2>
-                        </div>
-                        <div class="section5_text_content">
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.Aenean sollicitudin, lorem quis bibendum aucto</p>
-                        </div>
-                    </div> -->
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                         <div class="section5_slider_wrapper">
@@ -206,12 +209,12 @@ Author: Pemuda Solusi Teknologi
 
                                 <div class="item">
                                     <div class="section5_item_imag main_wrapper">
-                                        <img src="<?= base_url() ?>/upload/sales/profile/<?= $profile['photo'] ?>"
+                                        <img src="<?= base_url() ?><?= isset($profile) ? '/upload/sales/profile/'.$profile['photo'] : '/assets/template/assets/images/photo/ab.jpeg' ?>"
                                             class="img-responsive img-round image_wrapper" alt="section1_t1__img" />
                                         <div class="image_wrapper_overlay">
                                             <div class="content_wrapper">
-                                                <h4><?= $profile['name'] ?></h4>
-                                                <h5><?= $profile['job'] ?></h5>
+                                                <h4><?= isset($profile) ? $profile['name'] : 'Mr. John Doe' ?></h4>
+                                                <h5><?= isset($profile) ? $profile['job'] : 'Marketing' ?></h5>
                                                 <ul class="social_icons">
                                                     <li><a href="<?= isset($socmed->url_wa) ? $socmed->url_wa : '#' ?>"><i
                                                                 class="fa fa-whatsapp"></i></a>
@@ -232,11 +235,11 @@ Author: Pemuda Solusi Teknologi
                                         </div>
                                     </div>
                                     <div class="section5_item_author" style="margin-bottom:10px;margin-top:10px;">
-                                        <h5><?= $profile['name'] ?></h5>
-                                        <span><b>(<?= $profile['job'] ?>)</b></span>
+                                        <h5><?= isset($profile) ? $profile['name'] : 'Mr. John Doe' ?></h5>
+                                        <span><b>(<?= isset($profile) ? $profile['job'] : 'Marketing' ?>)</b></span>
                                     </div>
                                     <div class="section5_item_content">
-                                        <p><i>"<?= $profile['motto'] ?>"</i></p>
+                                        <p><i>"<?= isset($profile) ? $profile['motto'] : 'Be Your Self, Great Marketer !!!' ?>"</i></p>
                                         <!-- <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
