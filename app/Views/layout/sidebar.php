@@ -63,7 +63,7 @@
      <li class="nav-item">
          <a class="nav-link" href="<?= route_to('admin/sales/customer') ?>">
              <i class="fas fa-fw fa-folder"></i>
-             <span>Customer Deliveries</span></a>
+             <span>Clients</span></a>
      </li>
 
      <li class="nav-item">

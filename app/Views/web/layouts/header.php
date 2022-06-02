@@ -7,7 +7,7 @@
     <meta name="keywords" content="="<?= isset($meta_tag) ? $meta_tag['keywords'] : '' ?>">
     <meta name="robots" content="index, follow">
 
-    <title> Toyota </title>
+    <title> <?= isset($meta_tag) ? $meta_tag['name'] : '' ?> </title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/upload/sales/meta_tag/<?= isset($meta_tag) ? $meta_tag['icon'] : '' ?>">
 

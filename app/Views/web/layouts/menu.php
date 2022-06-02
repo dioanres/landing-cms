@@ -10,18 +10,15 @@
     <!-- section_1 start-->
     <div data-scroll='0' class="">
         <div>
-            
-
             <!-- section1_menu_wrapper start here -->
-
             <div class="section2_menu_wrapper">
                 <div class="container">
                     <div class="row section2_header">
                         <div class="col-lg-4 col-md-4 col-xs-12 col-sm-3">
                             <div class="logo_wrapper">
                                 <a href="../index.html"><img style="height:35px;"
-                                        src="<?= base_url() ?>/assets/template/assets/images/section3_logo.png"
-                                        class="img-responsive" alt="section2_logo_img" />
+                                        src="<?= base_url() ?>/upload/sales/profile/<?= isset($profile) ? $profile['logo'] :'' ?>"
+                                        class="img-responsive" alt="logo_image" />
                                 </a>
                             </div>
                             <button type="button" class="navbar-toggle" data-toggle="collapse"

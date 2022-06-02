@@ -3,9 +3,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Marketing Toyota, Mobil Baru, Mobil Bekas">
 <meta name="author" content="MQL Digital">
-<link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/assets/template/icons/4.jpeg">
+<link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/upload/sales/meta_tag/<?= session()->get('meta_tags') ? session()->get('meta_tags')['icon'] : '' ?> ">
 
-<style>
+<style> 
     .text-red {
         color: red;
     }

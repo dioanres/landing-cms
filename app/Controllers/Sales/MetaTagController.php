@@ -34,6 +34,7 @@ class MetaTagController extends BaseController
             'author' => $this->request->getPost('author'), 
             'keywords' => $this->request->getPost('keywords'),                    
             'icon' => $this->request->getPost('icon'),
+            'name' => $this->request->getPost('name'),
         ];
 
         $icon = $this->request->getFile('icon');
@@ -72,6 +73,7 @@ class MetaTagController extends BaseController
                     'author' => $this->request->getPost('author'), 
                     'keywords' => $this->request->getPost('keywords'),                    
                     'icon' => $this->request->getPost('icon'),
+                    'name' => $this->request->getPost('name'),
                 ];
                 
                 if($this->request->getPost('image_existing')){

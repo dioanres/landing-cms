@@ -73,7 +73,7 @@ Author: Pemuda Solusi Teknologi
                         <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 col-lg-offset-3">
                             <div class="text-center">
                                 <div class="section_heading">
-                                    <h2><i class="fa fa-square"></i> Top Products</h2>
+                                    <h2><i class="fa fa-square"></i> Portfolio</h2>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ Author: Pemuda Solusi Teknologi
                                     <div class="row">
                                         <div id="gridWrapper">
                                         <?php if(!empty($products)): foreach($products as $product): ?>
-                                        <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 portfolio-wrapper"
+                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6 portfolio-wrapper"
                                             data-groups='["all", "<?= $product['group_name'] ?>"]'>
                                             <a class="btn show-product" data-product_id="<?= $product['id'] ?>">
                                                 <div class="tab_image_wrapper">
@@ -126,11 +126,7 @@ Author: Pemuda Solusi Teknologi
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="text-center">
-                        <button id="other-price" class="btn btn-primary">Lihat Harga Produk Lain</button>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
@@ -160,7 +156,7 @@ Author: Pemuda Solusi Teknologi
                         <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 col-lg-offset-3">
                             <div class="text-center">
                                 <div class="section_heading">
-                                    <h2><i class="fa fa-square"></i> Delivery Customers</h2>
+                                    <h2><i class="fa fa-square"></i> Our Clients</h2>
                                 </div>
                                 <!-- <div class="section_content">
                                     <p>Para <i>Customers</i> yang telah mempercayakan pembelian mobil kepada Arif</p>
@@ -267,8 +263,7 @@ Author: Pemuda Solusi Teknologi
                                     <h2><i class="fa fa-square"></i> What Client Say :</h2>
                                 </div>
                                 <div class="section_content">
-                                    <p>Testimonial dari para customer yang sudah mempercayakan kepada saya dalam
-                                        pembelian Mobil.</p>
+                                    <p>Testimonial Customer.</p>
                                 </div>
                             </div>
                         </div>

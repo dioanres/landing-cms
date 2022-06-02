@@ -56,7 +56,7 @@ class Database extends \CodeIgniter\Database\Config
 		'hostname' => 'localhost',
 		'username' => 'root',
 		'password' => 'root',
-		'database' => 'cms_web_tms',
+		'database' => 'landing_cms',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,

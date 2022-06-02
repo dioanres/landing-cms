@@ -3,6 +3,7 @@
 use Session;
 use FlashData;
 use App\Models\UserModel;
+use App\Models\MetaTagModel;
 use App\Models\ProfileModel;
 use App\Models\ActivityLoginModel;
 
@@ -15,6 +16,7 @@ class LoginController extends BaseController
         $this->model = new UserModel();
         $this->activityLoginModel = new ActivityLoginModel();
         $this->profileModel = new ProfileModel();
+        $this->metaTagModel = new MetaTagModel();
         $this->validation =  \Config\Services::validation();
         
     }
@@ -47,6 +49,7 @@ class LoginController extends BaseController
                         'isLogin' => true,
                         'user' => $user,
                         'profile' => $this->profileModel->first(),
+                        'meta_tags' => $this->metaTagModel->first(),
                     ];
                     
                     $user['last_login'] = date('Y-m-d h:i:s');

@@ -21,6 +21,15 @@
 </div>
 <div class="form-group row">
     <div class="col-sm-6 mb-3 mb-sm-0">
+        <input type="text" class="form-control" placeholder="Name" name="name"
+            value="<?= $data ? $data['name'] : '' ?>">
+        <?php if (isset($errors['name'])) {
+             echo '<span class="text-red">'.$errors['name'].'</span>';
+        } ?>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
         <input type="text" class="form-control" placeholder="Title" name="title"
             value="<?= $data ? $data['title'] : '' ?>">
         <?php if (isset($errors['title'])) {

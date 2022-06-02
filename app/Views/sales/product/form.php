@@ -8,8 +8,8 @@
                 <option <?= $data && $data['product_group_id'] == $val['id'] ? 'selected' : '' ?> value="<?= $val['id'] ?>"> <?= $val['name'] ?> </option>
             <?php endforeach; ?>
         </select>
-        <?php if (isset($errors['name'])) {
-             echo '<span class="text-red">'.$errors['name'].'</span>';
+        <?php if (isset($errors['product_group_id'])) {
+             echo '<span class="text-red">'.$errors['product_group_id'].'</span>';
         } ?>
     </div>
 </div>

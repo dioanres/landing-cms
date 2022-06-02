@@ -10,7 +10,7 @@ class MetaTagModel extends BaseModel
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['icon', 'title','description', 'author', 'keywords'];
+    protected $allowedFields = ['icon', 'title','description', 'author', 'keywords', 'name'];
     protected $useTimestamps = true;
 
     protected $validationRules    = [
