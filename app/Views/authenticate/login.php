@@ -45,12 +45,12 @@
                     action="<?= base_url() ?>/proses_login">
 
                     <div class="wrap-input100 validate-input" data-validate="Enter email">
-                        <input class="input100" type="text" name="email" placeholder="Email">
+                        <input class="input100" type="text" name="email" placeholder="admin@admin.com">
                         <span class="focus-input100" data-placeholder="&#xe82a;"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Enter password">
-                        <input class="input100" type="password" name="password" placeholder="Password">
+                        <input class="input100" type="password" name="password" placeholder="12345678">
                         <span class="focus-input100" data-placeholder="&#xe80f;"></span>
                     </div>
 
