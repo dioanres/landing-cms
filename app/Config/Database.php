@@ -56,7 +56,7 @@ class Database extends \CodeIgniter\Database\Config
 		'hostname' => 'localhost',
 		'username' => 'root',
 		'password' => 'root',
-		'database' => 'landing_cms',
+		'database' => '',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
@@ -136,7 +136,7 @@ class Database extends \CodeIgniter\Database\Config
 				}
 			}
 		} else if (ENVIRONMENT === 'production') {
-			$this->defaultGroup = 'production';
+			$this->defaultGroup = 'default';
 		}
 
 	}
