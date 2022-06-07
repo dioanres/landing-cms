@@ -22,7 +22,7 @@ class ProfileController extends BaseController
     {   
         return view('sales/profile/add',
             ['data' => null,
-            'title' => 'Add Product'
+            'title' => 'Add Profil'
         ]);
     }
 
