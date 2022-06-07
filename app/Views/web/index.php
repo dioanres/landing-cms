@@ -275,7 +275,7 @@ Author: Pemuda Solusi Teknologi
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                         <div class="testimonial_slider_wrapper">
                             <div class="owl-carousel owl-theme">
-                                <?php if ($customers) : 
+                                <?php if ($testimonials) : 
                                     foreach($testimonials as $testi) : 
                                     ?>
                                 <div class="item">
