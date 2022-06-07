@@ -83,6 +83,12 @@
              <i class="fas fa-fw fa-folder"></i>
              <span>Meta Tags</span></a>
      </li>
+
+     <li class="nav-item">
+         <a class="nav-link" href="<?= route_to('admin/sales/meta_menu') ?>">
+             <i class="fas fa-fw fa-folder"></i>
+             <span>Meta Menu</span></a>
+     </li>
      <!-- Divider -->
      <hr class="sidebar-divider d-none d-md-block">
 

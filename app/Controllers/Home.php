@@ -5,6 +5,7 @@ use App\Models\MetaTagModel;
 use App\Models\ProductModel;
 use App\Models\ProfileModel;
 use App\Models\CustomerModel;
+use App\Models\MetaMenuModel;
 use App\Models\SubProductModel;
 use App\Models\TestimonialModel;
 use App\Models\NotificationModel;
@@ -23,6 +24,7 @@ class Home extends BaseController
 		$this->subProductModel = new SubProductModel();
 		$this->productGroupModel = new ProductGroupModel();
 		$this->metaTagModel	= new MetaTagModel();
+		$this->metaMenuModel	= new MetaMenuModel();
 	}
 	
 	public function index()
@@ -40,9 +42,10 @@ class Home extends BaseController
 			'testimonials'	=> $this->testimoniModel->findAll(),
 			'groups'	=> 	$this->productGroupModel->findAll(),
 			'meta_tag' => $this->metaTagModel->first(),
+			'meta_menu' => $this->metaMenuModel->first(),
 		];
-
-		$data['socmed'] = isset($data['profile']['meta_socmed']) ? json_decode($data['profile']['meta_socmed']) : null;
+		$data['socmed'] = json_decode($data['profile']['meta_socmed']);
+		$data['menu'] = json_decode($data['meta_menu']['meta'], true)['menu'];
 		
 		return view('web/index', $data);
 	}

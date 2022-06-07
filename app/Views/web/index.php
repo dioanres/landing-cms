@@ -73,10 +73,13 @@ Author: Pemuda Solusi Teknologi
                 <div class="container">
                     <div class="row">
                         <!-- section_heading start -->
-                        <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 col-lg-offset-3">
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                             <div class="text-center">
                                 <div class="section_heading">
-                                    <h2><i class="fa fa-square"></i> Portfolio</h2>
+                                    <h2><i class="fa fa-square"></i> <?= $menu['product']['product_title'] ?></h2>
+                                </div>
+                                <div class="section_content">
+                                    <p><?= $menu['product']['product_desc'] ?></p>
                                 </div>
                             </div>
                         </div>
@@ -159,11 +162,11 @@ Author: Pemuda Solusi Teknologi
                         <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 col-lg-offset-3">
                             <div class="text-center">
                                 <div class="section_heading">
-                                    <h2><i class="fa fa-square"></i> Our Clients</h2>
+                                    <h2><i class="fa fa-square"></i> <?= $menu['customer']['customer_title'] ?></h2>
                                 </div>
-                                <!-- <div class="section_content">
-                                    <p>Para <i>Customers</i> yang telah mempercayakan pembelian mobil kepada Arif</p>
-                                </div> -->
+                                <div class="section_content">
+                                    <p><?= $menu['customer']['customer_desc'] ?></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -263,10 +266,10 @@ Author: Pemuda Solusi Teknologi
                         <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 col-lg-offset-3">
                             <div class="text-center">
                                 <div class="section_heading">
-                                    <h2><i class="fa fa-square"></i> What Client Say :</h2>
+                                    <h2><i class="fa fa-square"></i> <?= $menu['testimonial']['testimonial_title'] ?></h2>
                                 </div>
                                 <div class="section_content">
-                                    <p>Testimonial Customer.</p>
+                                    <p><?= $menu['testimonial']['testimonial_desc'] ?></p>
                                 </div>
                             </div>
                         </div>

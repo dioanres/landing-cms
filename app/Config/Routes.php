@@ -86,6 +86,14 @@ $routes->group('admin',['filter' => 'auth'], function($routes)
 		$routes->get('meta_tag/edit/(:num)','Sales\MetaTagController::edit/$1');
 		$routes->get('meta_tag/delete/(:num)','Sales\MetaTagController::delete/$1');
 
+		//meta menu
+		$routes->get('meta_menu','Sales\MetaMenuController');
+		$routes->add('meta_menu/add','Sales\MetaMenuController::add');
+		$routes->post('meta_menu/save','Sales\MetaMenuController::save');
+		$routes->post('meta_menu/update','Sales\MetaMenuController::update');
+		$routes->get('meta_menu/edit/(:num)','Sales\MetaMenuController::edit/$1');
+		$routes->get('meta_menu/delete/(:num)','Sales\MetaMenuController::delete/$1');
+
 		//testimoni
 		$routes->get('testimonial','Sales\TestimoniController');
 		$routes->add('testimonial/add','Sales\TestimoniController::add');
