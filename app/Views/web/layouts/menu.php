@@ -13,7 +13,7 @@
             <!-- section1_menu_wrapper start here -->
             <div class="section2_menu_wrapper">
                 <div class="container">
-                    <div class="row section2_header">
+                    <div class="row">
                         <div class="col-lg-4 col-md-4 col-xs-12 col-sm-3">
                             <div class="logo_wrapper">
                                 <a href="../index.html"><img style="height:35px;"
