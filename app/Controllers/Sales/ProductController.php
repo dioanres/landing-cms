@@ -55,17 +55,20 @@ class ProductController extends BaseController
             
             if($this->model->save($data) == true)
             {
-                foreach ($this->request->getPost('sub_product_name') as $key => $value) {
-                    if(!$this->sub_product->save([
-                        'product_id' => $this->model->insertID,
-                        'sub_product_name' => $value,
-                        'sub_product_price' => $this->request->getPost('sub_product_price')[$key],
-                    ])) {
-                        $this->model->transRollback();
-
-                        return redirect()->back()->with('errors', $this->sub_product->errors());
-                    };
+                if ($this->request->getPost('sub_product_name')) {
+                    foreach ($this->request->getPost('sub_product_name') as $key => $value) {
+                        if(!$this->sub_product->save([
+                            'product_id' => $this->model->insertID,
+                            'sub_product_name' => $value,
+                            'sub_product_price' => $this->request->getPost('sub_product_price')[$key],
+                        ])) {
+                            //$this->model->transRollback();
+    
+                            return redirect()->back()->with('errors', $this->sub_product->errors());
+                        };
+                    }
                 }
+                
                 return redirect('admin/sales/product');
             }
 
