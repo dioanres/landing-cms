@@ -15,12 +15,15 @@ Author: Pemuda Solusi Teknologi
 <body>
     <?= View('/web/layouts/menu') ?>
     <?= View('/web/modal_products') ?>
+
+   
     <!--Slider area start here-->
     <section data-scroll='0' class="slider-area" id="0">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd-0">
                     <div id="carouselExampleIndicators" class="slide carousel" data-ride="carousel">
+                    
                         <div class="carousel-inner" role="listbox">
                             <?php if ($banners): 
                                         foreach ($banners as $key => $banner) :    

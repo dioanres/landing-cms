@@ -44,6 +44,11 @@ $(document).ready(function() {
         });
         $('#modal-sub-product').modal('show');
     });
+
+    $('.menu').click(function(){
+        $('.menu').removeClass('active');
+        $(this).addClass('active');
+    });
 });
 
 //Side Menu js

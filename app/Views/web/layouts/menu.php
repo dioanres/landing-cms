@@ -34,15 +34,15 @@
 
                                 <div class="collapse navbar-collapse" id="mySidenav">
                                     <ul class="nav navbar-nav">
-                                        <li class="active"><a href="#0">Home</a>
+                                        <li class="menu active"><a href="#0">Home</a>
                                         </li>
-                                        <li><a href="#5">Top Products</a>
+                                        <li class="menu"><a href="#5">Top Products</a>
                                         </li>
-                                        <li><a href="#4">Customers</a>
+                                        <li class="menu"><a  href="#4">Customers</a>
                                         </li>
-                                        <li><a href="#6">Testimonials</a>
+                                        <li class="menu"><a href="#6">Testimonials</a>
                                         </li>
-                                        <li><a href="#contact-us">Contact Us</a>
+                                        <li class="menu"><a href="#contact-us">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -54,18 +54,16 @@
                     <div class="visible-xs">
                         <div class="collapse navbar-collapse" id="section2_responsive_nav">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#0">Home</a>
+                                <li class="menu active"><a href="#0">Home</a>
                                 </li>
-                                <li><a href="#5">Top Products</a>
+                                <li class="menu"><a href="#5">Top Products</a>
                                 </li>
-                                <li><a href="#4">Customers</a>
+                                <li class="menu"><a href="#4">Customers</a>
                                 </li>
-                                <li><a href="#6">Testimonials</a>
+                                <li class="menu"><a href="#6">Testimonials</a>
                                 </li>
+                                <li class="menu"><a href="#contact-us">Contact Us</a>
                                 </li>
-                                <li><a href="#contact-us">Contact Us</a>
-                                </li>
-
                             </ul>
                         </div>
                     </div>
